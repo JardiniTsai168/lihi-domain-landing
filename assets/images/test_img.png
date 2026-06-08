@@ -1,0 +1,136 @@
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Error 404! – lihi.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+
+  <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta property="title" content="lihi.io - AB 分流行銷短網址 | 縮網址 | 短連結">
+    <meta property="description" content="最適合數位行銷, 可用來AB測試, 分流, 創立QR code 跟數據追蹤的短網址">
+    <meta property="keywords" content="短網址, 縮網址, 數位行銷, AB 測試, QR Code創立, 數據追蹤, Chrome 套件, 更換 OG 圖跟資訊">
+    <meta property="og:title" content="lihi.io - AB 分流行銷短網址 | 縮網址 | 短連結">
+    <meta property="og:description" content="最適合數位行銷, 可用來AB測試, 分流, 創立QR code 跟數據追蹤的短網址">
+    <meta property="og:image" content="/assets/img/logo3.png">
+    <title>404 Not Found - lihi.io</title>
+    <link rel="shortcut icon" href="/assets/img/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/assets/main/css/all.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 991.9px)" href="/assets/menu/css/tablet.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 767.8px)" href="/assets/main/css/screen_xs.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700"/>
+    <link rel="stylesheet" media="screen and (max-width: 415px) and (max-height: 1281px)" href="/assets/menu/css/mobile.css?v=1"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script>
+         setTimeout(function() {
+             // Check if user is still on page after 3 seconds
+             if (document.visibilityState !== 'hidden') {
+                 window.location.href = 'https://lihi.marketing/shopeeaff/auto';
+             }
+        }, 4000);
+    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4LQXR47BV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H4LQXR47BV');
+
+    gtag('event', 'page_view', {
+      page_title: '404 Not Found',
+      page_location: window.location.href,
+      page_path: window.location.pathname
+    });
+  </script>
+</head>
+<body class="position-relative">
+  <div id="nav_head">
+    <div class="wrapper">
+        <a class="navbar-brand" href="#header"><img src="/assets/img/logo.svg"></a>
+        <nav class="navigation">
+           <ul>
+                <li class="cross"><i class="fas fa-times"></i></li>
+		            <li>
+                  <a href="javascript:void(0)">我們的服務</a>
+                  <ul class="sub-menu">
+                    <li><a href="https://knowledge.lihi.io/features/">產品優勢</a></li>
+                    <li><a href="https://knowledge.lihi.io/testimonial-2/">使用者見證</a></li>
+                    <li><a href="https://knowledge.lihi.io/pricing/">服務價格</a></li>
+                    <li><a href="https://domain.lihi.io/">品牌網域註冊</a></li>
+                    <li><a href="https://app.lihi.io/admin/">短網址服務</a></li>
+                  </ul>
+                </li>
+		            <li>
+                  <a href="javascript:void(0)">行銷資源</a>
+                  <ul class="sub-menu">
+                    <li><a href="https://knowledge.lihi.io">知識庫</a></li>
+                    <li><a href="https://knowledge.lihi.io/recommended-course-ch/">官方課程推薦</a></li>
+                    <li><a href="https://verify.lihi.io/">LIHI 證照驗證</a></li>
+                  </ul>
+                </li>
+		            <li><a href="https://knowledge.lihi.io/about-us-ch/">關於我們</a></li>
+		            <li><a href="https://report.lihi.io/">檢舉網址</a></li>
+            </ul>
+	</nav>
+        <div style="display: flex;">
+          <a class="auth-btn" href="https://app.lihi.io/admin/login">登入 / 註冊</a>
+          <div class="header_bar"><i class="fas fa-bars"></i></div>
+        </div>
+    </div>
+</div>
+<div class="mobile-navigation">
+  <nav>
+    <ul>
+      <li>
+        <a href="javascript:void(0)">我們的服務</a>
+        <ul class="sub-menu">
+            <li><a href="https://knowledge.lihi.io/features/">產品優勢</a></li>
+            <li><a href="https://knowledge.lihi.io/testimonial-2/">使用者見證</a></li>
+            <li><a href="https://knowledge.lihi.io/pricing/">服務價格</a></li>
+            <li><a href="https://domain.lihi.io/">品牌網域註冊</a></li>
+            <li><a href="https://app.lihi.io/admin">短網址服務</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">行銷資源</a>
+        <ul class="sub-menu">
+            <li><a href="https://knowledge.lihi.io">知識庫</a></li>
+            <li><a href="https://knowledge.lihi.io/recommended-course-ch/">官方課程推薦</a></li>
+            <li><a href="https://verify.lihi.io/">LIHI 證照驗證</a></li>
+        </ul>
+      </li>
+      <li><a href="https://report.lihi.io/">檢舉網址</a></li>
+      <li><a href="https://knowledge.lihi.io/about-us-ch/">關於我們</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- partial:index.partial.html -->
+<p style='display:none;'>::CLOUDFLARE_ERROR_500S_BOX::</p>
+
+<div class="content-wrapper">
+  <div class="browser">
+    <div class="controls">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    
+    <p class="mb-4" style="margin-top: 50px;">哎喲, 你點擊的連結已經 404 了!</p>
+    <p class="text-black"><a href="https://lihi.marketing/shopeeaff" class="btn-link pr-1">點擊這裡</a>找找看有沒有你要的東西</p>
+  </div>
+
+  <p class="position-absolute w-100 text-white" style="left: 50%;transform: translateX(-50%);">瞭解更多 <a href="https://lihi.io">lihi.io</a> 的服務</p>
+</div>
+<script src="/assets/menu/js/all.js?v=4"></script>
+<script src="/assets/menu/js/index.js?v=4"></script>
+</body>
+</html>

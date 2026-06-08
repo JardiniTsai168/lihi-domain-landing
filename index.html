@@ -346,11 +346,11 @@ body.menu-open{overflow:hidden}
 .testimonials::before{content:'';position:absolute;top:5%;left:-3%;width:180px;height:180px;background:radial-gradient(circle,rgba(255,107,157,0.05) 0%,transparent 70%);pointer-events:none;border-radius:50%}
 .testimonials .section-desc{text-align:center;font-size:18px;color:var(--text-secondary);margin-top:-4px;margin-bottom:var(--title-gap)}
 .test-slider{position:relative;padding:0 60px}
-.test-grid{overflow:visible}
-.test-track{display:flex;gap:28px}
-.test-card{background:#fff;border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-rest);position:relative;flex:0 0 480px;transition:transform .5s ease,opacity .5s ease,filter .5s ease,box-shadow .5s ease;transform:scale(0.85);opacity:0.35;filter:brightness(0.8)}
-.test-card.active{transform:scale(1);opacity:1;filter:none;box-shadow:0 12px 40px rgba(255,107,157,0.18)}
-.test-card img{width:100%;aspect-ratio:4/3;object-fit:contain}
+.test-grid{overflow:hidden}
+.test-track{display:flex;gap:28px;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.test-card{background:#fff;border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--shadow-rest);flex:0 0 calc((100% - 56px) / 3);transition:transform .3s ease,box-shadow .3s ease}
+.test-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,107,157,0.18)}
+.test-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
 .test-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:none;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--text-dark);transition:all .2s;z-index:10;box-shadow:0 2px 12px rgba(0,0,0,0.1)}
 .test-arrow:hover{background:var(--brand-pink);color:#fff;box-shadow:0 4px 20px rgba(255,107,157,0.3)}
 #testPrev{left:0}
@@ -415,7 +415,7 @@ body.menu-open{overflow:hidden}
   .data-visual-row{grid-template-columns:1fr;max-width:600px}
   .tools-grid{grid-template-columns:repeat(2,1fr)}
   .test-slider{padding:0 48px}
-  .test-card{flex:0 0 400px}
+  .test-card{flex:0 0 calc((100% - 28px) / 2)}
   .pain-layout{grid-template-columns:1fr;gap:20px}
   .pain-illustration{position:static}
   .pain-illustration img{max-width:160px}
@@ -566,11 +566,13 @@ body.menu-open{overflow:hidden}
   .growth-curve-wrap{padding:16px}
 
   /* --- 7. 見證區 --- */
-  .test-slider{padding:0 36px}
-  .test-card{flex:0 0 85vw}
-  .test-arrow{width:32px;height:32px;font-size:14px}
-  #testPrev{left:0}
-  #testNext{right:0}
+  .test-slider{padding:0 20px}
+  .test-grid{overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .test-grid::-webkit-scrollbar{display:none}
+  .test-track{transition:none;width:max-content}
+  .test-card{flex:0 0 85vw;scroll-snap-align:center}
+  .test-arrow{display:none}
+  .test-dots{display:none}
   .test-card-meta{padding:12px 14px}
   .test-avatar{width:32px;height:32px;font-size:13px}
   .test-name{font-size:13px}
@@ -1141,43 +1143,90 @@ body.menu-open{overflow:hidden}
 <section class="testimonials" id="testimonials">
   <div class="container">
     <div class="section-subtitle center">使用者見證</div>
-    <h2 class="section-title center" style="display:none">品牌主對 lihi 短網址的真實評價</h2>
-    <div style="text-align:center;padding:40px 0;">
-      <h3 style="font-size:24px;font-weight:700;color:var(--dark-bg);margin-bottom:16px;">5,000+ 品牌主的信任選擇</h3>
-      <p style="font-size:16px;color:var(--text-secondary);">從新創到上市企業，各規模品牌都選擇 lihi 打造專屬網域</p>
-    </div>
+    <h2 class="section-title center">品牌主對 lihi 短網址的真實評價</h2>
     <p class="section-desc">來自百萬品牌電商的親身體驗</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:1000px;margin:0 auto;padding:20px 0;">
-      <div style="background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E5E7EB;">
-        <div style="font-size:36px;color:#FF6B9D;margin-bottom:8px;">❝</div>
-        <p style="font-size:15px;color:var(--text-dark);line-height:1.6;margin-bottom:16px;">lihi 服務無敵滿意，超級推薦！品牌網域讓我們的專業形象大幅提升。</p>
-        <div style="font-size:14px;color:var(--text-secondary);font-weight:600;">行銷社群專家 · 陳思傑</div>
+    <div class="test-slider">
+      <div class="test-grid" id="testSlider">
+        <div class="test-track" id="testTrack">
+          <div class="test-card">
+            <img src="./assets/images/testimonial-1.png" alt="lihi 短網址使用者好評 — 行銷社群專家與電商經營者推薦">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">行銷社群專家-陳思傑、電商經營者-李忠儒 等｜lihi服務無敵滿意，超級推薦!</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card">
+            <img src="./assets/images/testimonial-2.png" alt="lihi 短網址使用者好評 — 電商社群與部落客推薦">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">電商社群、部落客、行銷社群：征服客戶的利器，縮網址、買網域找 lihi 真的無敵滿意！</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card">
+            <img src="./assets/images/testimonial-3.png" alt="lihi 短網址使用者好評 — 品牌顧問 Miru Tsai 推薦">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">品牌顧問Miru Tsai — 神級工具，助我數位行銷，lihi 自訂網域，強化形象更能防範詐騙，讓顧客購物時更安心。</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card">
+            <img src="./assets/images/testimonial-4.png" alt="lihi 短網址使用者好評 — 眾多專家社團推薦">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">眾多專家力薦：lihi自訂網域，提升品牌信任與成效！</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card">
+            <img src="./assets/images/testimonial-5.png" alt="lihi 短網址使用者好評 — 各大行銷教學網站推薦">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">各大行銷教學網站 — 必備！lihi 短網址，功能強大，活動換檔不改連結，數據精準且管理輕鬆。</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card">
+            <img src="./assets/images/testimonial-6.png" alt="lihi 短網址使用者好評 — 電商經營者五星評價">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">電商經營者 — lihi是行銷人真正需要的短網址工具。</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card">
+            <img src="./assets/images/testimonial-7.png" alt="lihi 短網址使用者好評 — 貝佛街餐酒坊推薦">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">貝佛街餐酒坊 — 餐廳・食品電商｜精準行銷，lihi助我們業績長紅！</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card">
+            <img src="./assets/images/testimonial-8.png" alt="lihi 短網址使用者好評 — 上班族先生推薦">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">上班族先生 Mr. Worker — 數位行銷｜數位行銷利器！用 lihi 埋 UTM 與 AB 測試，讓網址效用發揮到極致。</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card">
+            <img src="./assets/images/testimonial-9.png" alt="lihi 短網址使用者好評 — TeSA 教育訓練推薦">
+            <div class="test-card-meta">
+              <div class="test-meta-text">
+                <div class="test-company">TeSA — 教育訓練｜lihi.io分流短網址，行銷人必用！</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div style="background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E5E7EB;">
-        <div style="font-size:36px;color:#FF6B9D;margin-bottom:8px;">❝</div>
-        <p style="font-size:15px;color:var(--text-dark);line-height:1.6;margin-bottom:16px;">縮網址、買網域找 lihi 真的無敵滿意！征服客戶的利器。</p>
-        <div style="font-size:14px;color:var(--text-secondary);font-weight:600;">電商社群 · 部落客推薦</div>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E5E7EB;">
-        <div style="font-size:36px;color:#FF6B9D;margin-bottom:8px;">❝</div>
-        <p style="font-size:15px;color:var(--text-dark);line-height:1.6;margin-bottom:16px;">神級工具，助我數位行銷！lihi 自訂網域強化形象，更能防範詐騙，讓顧客購物更安心。</p>
-        <div style="font-size:14px;color:var(--text-secondary);font-weight:600;">品牌顧問 · Miru Tsai</div>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E5E7EB;">
-        <div style="font-size:36px;color:#FF6B9D;margin-bottom:8px;">❝</div>
-        <p style="font-size:15px;color:var(--text-dark);line-height:1.6;margin-bottom:16px;">行銷必學 lihi 短網址！自有網域專業感倍增，小白新手首選。</p>
-        <div style="font-size:14px;color:var(--text-secondary);font-weight:600;">TeSA 教育訓練</div>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E5E7EB;">
-        <div style="font-size:36px;color:#FF6B9D;margin-bottom:8px;">❝</div>
-        <p style="font-size:15px;color:var(--text-dark);line-height:1.6;margin-bottom:16px;">自訂網域太絕了！散發專業品牌感，轉換率急升，連朋友都說好用。</p>
-        <div style="font-size:14px;color:var(--text-secondary);font-weight:600;">貝佛街餐酒坊</div>
-      </div>
-      <div style="background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #E5E7EB;">
-        <div style="font-size:36px;color:#FF6B9D;margin-bottom:8px;">❝</div>
-        <p style="font-size:15px;color:var(--text-dark);line-height:1.6;margin-bottom:16px;">網域就是門面！推薦 lihi 短網址綁定自有網域，強化識別與品牌。</p>
-        <div style="font-size:14px;color:var(--text-secondary);font-weight:600;">上班族先生</div>
-      </div>
+      <button class="test-arrow" id="testPrev">←</button>
+      <button class="test-arrow" id="testNext">→</button>
+    </div>
+    <div class="test-dots" id="testDots">
+      <span class="active"></span><span></span><span></span>
     </div>
   </div>
 </section>
@@ -1386,84 +1435,40 @@ body.menu-open{overflow:hidden}
     requestAnimationFrame(update);
   }
 
-  // ===== TESTIMONIAL SLIDER (infinite) =====
+  // ===== TESTIMONIAL SLIDER (3-card carousel) =====
   (function() {
     var track = document.getElementById('testTrack');
-    var origCards = Array.from(track.querySelectorAll('.test-card'));
     var dots = document.querySelectorAll('#testDots span');
     var prevBtn = document.getElementById('testPrev');
     var nextBtn = document.getElementById('testNext');
-    var total = origCards.length;
+    var totalPages = dots.length; // 3 pages for desktop
+    var currentPage = 0;
     var autoTimer;
-
-    // Clone cards for infinite loop: [clone-set] [original] [clone-set]
-    origCards.forEach(function(c) { track.appendChild(c.cloneNode(true)); });
-    var prependFrag = document.createDocumentFragment();
-    origCards.forEach(function(c) { prependFrag.appendChild(c.cloneNode(true)); });
-    track.insertBefore(prependFrag, track.firstChild);
-    var allCards = track.querySelectorAll('.test-card');
-    // Current index in the "real" middle set (offset by total)
-    var current = total; // start at first real card
-
-    function getMetrics() {
-      var card = allCards[0];
-      var style = getComputedStyle(track);
-      var gap = parseInt(style.gap) || 28;
-      var cardW = card.offsetWidth;
-      return { cardW: cardW, gap: gap, step: cardW + gap };
-    }
-
-    function render(animate) {
-      var m = getMetrics();
-      var containerW = track.parentElement.offsetWidth;
-      // Center the current card
-      var offset = current * m.step - (containerW - m.cardW) / 2;
-      track.style.transition = animate ? 'transform .5s cubic-bezier(.4,0,.2,1)' : 'none';
-      track.style.transform = 'translateX(' + (-offset) + 'px)';
-      // Spotlight
-      allCards.forEach(function(c, i) {
-        c.classList.toggle('active', i === current);
-      });
-      // Dots (map to real index)
-      var realIdx = ((current - total) % total + total) % total;
-      dots.forEach(function(d, i) { d.className = i === realIdx ? 'active' : ''; });
-    }
-
-    function jumpIfNeeded() {
-      var jumped = false;
-      if (current >= total * 2) {
-        current = current - total;
-        jumped = true;
-      } else if (current < total) {
-        current = current + total;
-        jumped = true;
-      }
-      if (jumped) {
-        // Disable ALL transitions during the silent jump
-        allCards.forEach(function(c) { c.style.transition = 'none'; });
-        render(false);
-        // Force reflow then re-enable
-        void track.offsetHeight;
-        allCards.forEach(function(c) { c.style.transition = ''; });
-      }
-    }
-
-    function goTo(idx) {
-      current = idx;
-      render(true);
-    }
-
-    track.addEventListener('transitionend', function(e) {
-      // Only respond to the track's own transform transition
-      if (e.target === track) jumpIfNeeded();
-    });
-
-    var slider = document.querySelector('.test-slider');
     var resumeTimer;
+    var slider = document.querySelector('.test-slider');
+
+    function getPageWidth() {
+      return track.parentElement.offsetWidth;
+    }
+
+    function render() {
+      if (window.innerWidth <= 767) return; // mobile uses scroll snap
+      var w = getPageWidth();
+      track.style.transform = 'translateX(' + (-currentPage * w) + 'px)';
+      dots.forEach(function(d, i) { d.className = i === currentPage ? 'active' : ''; });
+    }
+
+    function goTo(page) {
+      currentPage = Math.max(0, Math.min(page, totalPages - 1));
+      render();
+    }
 
     function startAuto() {
       clearInterval(autoTimer);
-      autoTimer = setInterval(function() { goTo(current + 1); }, 4000);
+      autoTimer = setInterval(function() {
+        var next = currentPage >= totalPages - 1 ? 0 : currentPage + 1;
+        goTo(next);
+      }, 4000);
     }
     function stopAuto() {
       clearInterval(autoTimer);
@@ -1474,22 +1479,17 @@ body.menu-open{overflow:hidden}
       resumeTimer = setTimeout(startAuto, 3000);
     }
 
-    prevBtn.addEventListener('click', function() { stopAndDelayResume(); goTo(current - 1); });
-    nextBtn.addEventListener('click', function() { stopAndDelayResume(); goTo(current + 1); });
+    prevBtn.addEventListener('click', function() { stopAndDelayResume(); goTo(currentPage - 1); });
+    nextBtn.addEventListener('click', function() { stopAndDelayResume(); goTo(currentPage + 1); });
     dots.forEach(function(d, i) {
-      d.addEventListener('click', function() { stopAndDelayResume(); goTo(total + i); });
+      d.addEventListener('click', function() { stopAndDelayResume(); goTo(i); });
     });
 
-    // Desktop: mouseleave restarts after 3s
     slider.addEventListener('mouseenter', stopAuto);
     slider.addEventListener('mouseleave', function() { resumeTimer = setTimeout(startAuto, 3000); });
 
-    // Mobile: touchend restarts after 3s
-    slider.addEventListener('touchstart', stopAuto, { passive: true });
-    slider.addEventListener('touchend', function() { resumeTimer = setTimeout(startAuto, 3000); }, { passive: true });
-
-    window.addEventListener('resize', function() { render(false); });
-    render(false);
+    window.addEventListener('resize', render);
+    render();
     startAuto();
   })();
 
