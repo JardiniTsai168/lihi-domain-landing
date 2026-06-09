@@ -1372,12 +1372,12 @@ body.menu-open{overflow:hidden}
   // ===== FOOTER YEAR =====
   document.getElementById('footerYear').textContent = new Date().getFullYear();
 
-  // ===== MOBILE STICKY CTA (show after benefits section enters viewport) =====
+  // ===== MOBILE STICKY CTA (show after pain-points section enters viewport) =====
   (function() {
     var stickyCta = document.querySelector('.mobile-sticky-cta');
     if (!stickyCta) return;
-    var benefits = document.querySelector('.benefits');
-    if (!benefits) return;
+    var painSection = document.querySelector('.pain-points');
+    if (!painSection) return;
     var shown = false;
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
@@ -1387,7 +1387,7 @@ body.menu-open{overflow:hidden}
         }
       });
     }, { threshold: 0.1 });
-    observer.observe(benefits);
+    observer.observe(painSection);
   })();
 
   // ===== NAV SCROLL =====
