@@ -573,7 +573,7 @@ body.menu-open{overflow:hidden}
   .footer-left p{font-size:12px}
 
   /* --- 11. Mobile sticky CTA bar --- */
-  .mobile-sticky-cta{display:block;padding:12px 16px calc(12px + env(safe-area-inset-bottom));border-top:1px solid rgba(26,26,94,0.08)}
+  .mobile-sticky-cta{display:none;padding:12px 16px calc(12px + env(safe-area-inset-bottom));border-top:1px solid rgba(26,26,94,0.08)}
   .mobile-sticky-cta .btn-primary{padding:16px;border-radius:14px;font-size:15px;box-shadow:0 12px 28px rgba(255,107,157,0.24)}
 
   /* Mid CTA */
@@ -1371,6 +1371,24 @@ body.menu-open{overflow:hidden}
 
   // ===== FOOTER YEAR =====
   document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+  // ===== MOBILE STICKY CTA (show after benefits section enters viewport) =====
+  (function() {
+    var stickyCta = document.querySelector('.mobile-sticky-cta');
+    if (!stickyCta) return;
+    var benefits = document.querySelector('.benefits');
+    if (!benefits) return;
+    var shown = false;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !shown) {
+          shown = true;
+          stickyCta.style.display = 'block';
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(benefits);
+  })();
 
   // ===== NAV SCROLL =====
   const nav = document.getElementById('nav');
