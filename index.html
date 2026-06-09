@@ -1372,22 +1372,31 @@ body.menu-open{overflow:hidden}
   // ===== FOOTER YEAR =====
   document.getElementById('footerYear').textContent = new Date().getFullYear();
 
-  // ===== MOBILE STICKY CTA (show after pain-points section enters viewport) =====
+  // ===== MOBILE STICKY CTA (toggle based on visible sections) =====
   (function() {
     var stickyCta = document.querySelector('.mobile-sticky-cta');
     if (!stickyCta) return;
     var painSection = document.querySelector('.pain-points');
-    if (!painSection) return;
-    var shown = false;
-    var observer = new IntersectionObserver(function(entries) {
+    var benefitsSection = document.querySelector('.benefits');
+    if (!painSection || !benefitsSection) return;
+
+    var painObserver = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
-        if (entry.isIntersecting && !shown) {
-          shown = true;
+        if (entry.isIntersecting) {
           stickyCta.style.display = 'block';
         }
       });
     }, { threshold: 0.1 });
-    observer.observe(painSection);
+    painObserver.observe(painSection);
+
+    var benefitsObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          stickyCta.style.display = 'none';
+        }
+      });
+    }, { threshold: 0.1 });
+    benefitsObserver.observe(benefitsSection);
   })();
 
   // ===== NAV SCROLL =====
