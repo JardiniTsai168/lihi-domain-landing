@@ -101,9 +101,10 @@ button{border:none;cursor:pointer;font-family:inherit}
 /* ===== NAV ===== */
 .nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:all .3s ease;background:#fff}
 .nav.scrolled{background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 3px rgba(0,0,0,0.08)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:0 24px}
+.nav-inner{display:flex;align-items:flex-end;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:0 24px}
 .nav-logo img{height:40px}
-.nav-slogan{font-size:12px;font-weight:600;color:var(--brand-pink);letter-spacing:.02em;margin-left:8px}
+.nav-logo{display:flex;align-items:flex-end}
+.nav-slogan{font-size:12px;font-weight:600;color:var(--brand-pink);letter-spacing:.02em;margin-left:8px;line-height:1}
 .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
 .nav-links a{font-size:15px;font-weight:500;color:var(--text-dark);transition:color .3s ease}
 .nav.scrolled .nav-links a{color:var(--text-dark)}
@@ -727,8 +728,7 @@ body.menu-open{overflow:hidden}
 <!-- ===== NAV ===== -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#" class="nav-logo"><img src="./assets/images/lihi-logo-primary.png" alt="lihi" style="height:40px"></a>
-    <span class="nav-slogan">品牌網域 x 行銷成長工具</span>
+    <a href="#" class="nav-logo"><img src="./assets/images/lihi-logo-primary.png" alt="lihi" style="height:40px"><span class="nav-slogan">品牌網域 x 行銷成長工具</span></a>
     <ul class="nav-links">
       <li><a href="#hero">品牌網域</a></li>
       <li><a href="#features">行銷工具</a></li>
@@ -777,7 +777,6 @@ body.menu-open{overflow:hidden}
   <div class="container">
     <div class="hero-grid">
       <div class="hero-left">
-        <div class="hero-mobile-eyebrow">lihi 品牌網域 x 行銷成長工具</div>
         <h1 class="hero-title">除了網域註冊，我們更想幫你成為厲害的行銷人</h1>
         <p class="hero-mobile-lead">不是只幫你買一個網址，而是把品牌信任感、流量追蹤和後續成長工具一起準備好。</p>
         <div class="hero-bullet-section">
