@@ -147,7 +147,8 @@ body.menu-open{overflow:hidden}
 
 .hero-grid{display:grid;grid-template-columns:6fr 4fr;gap:64px;align-items:center;position:relative;z-index:1}
 .hero-title{font-size:48px;line-height:56px;font-weight:700;margin-bottom:24px}
-.hero-mobile-eyebrow,.hero-mobile-lead,.hero-mobile-signal-row,.hero-mobile-signal,.hero-mobile-search-card,.hero-mobile-note{display:none}
+.hero-mobile-eyebrow,.hero-mobile-lead,.hero-mobile-signal-row,.hero-mobile-signal,.hero-mobile-note{display:none}
+.hero-search-wrap{display:block}
 .hero-bullet-section{margin-bottom:28px}
 .hero-bullets{list-style:none}
 .hero-bullets li{font-size:17px;color:var(--text-dark);margin-bottom:10px;font-weight:500}
@@ -608,7 +609,7 @@ body.menu-open{overflow:hidden}
   .mdc-bar:nth-child(6){height:100%;background:#1A1A5E}
   .mdc-link-row{font-size:6px;color:var(--text-secondary);padding:2px 0;border-top:1px solid #f0f0f0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .mdc-ab{font-size:5px;background:rgba(255,107,157,0.15);color:var(--brand-pink);padding:1px 3px;border-radius:2px;font-weight:600}
-  .hero-mobile-search-card{
+  .hero-search-wrap{
     display:block;
     margin-top:6px;
     padding:14px;
@@ -941,7 +942,7 @@ body.menu-open{overflow:hidden}
             </div>
           </div>
         </div>
-        <div class="hero-mobile-search-card">
+        <div class="hero-search-wrap">
           <div class="hero-mobile-note">先查你想要的品牌網域還在不在</div>
           <div class="hero-search" id="domain-search">
             <input type="text" id="domain-search-input" placeholder="輸入你喜歡的網域名稱，查詢是否可用">
