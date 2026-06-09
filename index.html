@@ -767,6 +767,73 @@ body.menu-open{overflow:hidden}
   .mid-cta h2{font-size:24px}
   .mid-cta .subtitle{font-size:14px}
 }
+
+/* ===== EXTRA MOBILE POLISH (< 767px) ===== */
+@media(max-width:767px){
+  /* === 1. 極小螢幕 (< 360px) 保險 === */
+  @media(max-width:360px){
+    .hero-title{font-size:24px;line-height:32px}
+    .hero-bullet-section{display:block!important}
+    .mobile-dash-card{display:none!important}
+    .benefit-item{width:100%!important;border-bottom:1px solid rgba(26,26,94,0.1)!important}
+    .benefit-item:nth-child(5){width:100%!important}
+    .pain-flow{width:240px;height:220px}
+    .pfi-step{width:80px}
+    .pfi-step img{height:44px!important}
+    .pfi-label{font-size:11px;padding:3px 8px}
+  }
+
+  /* === 2. 防水平溢出 === */
+  body{overflow-x:hidden;-webkit-text-size-adjust:100%}
+  img{height:auto}
+  .pain-flow{max-width:100%;margin-left:auto;margin-right:auto}
+
+  /* === 3. 優化點擊／觸控體驗 === */
+  .nav-hamburger{min-width:44px;min-height:44px;padding:10px}
+  .faq-question{min-height:48px;-webkit-tap-highlight-color:transparent}
+  .mobile-submenu-toggle{min-height:48px;-webkit-tap-highlight-color:transparent}
+  .test-card{-webkit-tap-highlight-color:transparent}
+  .hero-search button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+  .btn-primary,.btn-secondary{touch-action:manipulation}
+
+  /* === 4. Scroll snap 優化 === */
+  .test-grid{
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;
+  }
+  .test-card{
+    flex:0 0 min(82vw,310px);
+    scroll-snap-align:center;
+    margin-right:12px;
+  }
+  .test-card:last-child{margin-right:0}
+
+  /* === 5. Focus 狀態（無障礙 + 美觀） === */
+  .hero-search input:focus-visible,
+  .faq-question:focus-visible,
+  .nav-hamburger:focus-visible{
+    outline:none;
+    box-shadow:0 0 0 3px rgba(255,107,157,0.25);
+    border-radius:8px;
+  }
+
+  /* === 6. 工具卡片截圖高度自適應 === */
+  .mini-screenshot{height:auto;min-height:52px;max-height:64px}
+
+  /* === 7. 數據區彈性 === */
+  .data-stat-card{padding:18px 14px}
+  .data-img-full{max-width:100%;overflow:hidden;border-radius:8px}
+
+  /* === 8. 搜尋框 active 狀態 === */
+  .hero-search input:focus{
+    border-color:var(--brand-pink);
+    box-shadow:0 0 0 3px rgba(255,107,157,0.15);
+  }
+
+  /* === 9. Footer 連結點擊區 === */
+  .footer-links a{display:inline-block;padding:6px 0}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -775,7 +842,7 @@ body.menu-open{overflow:hidden}
   "name": "lihiDomain.com",
   "url": "https://lihiDomain.com",
   "logo": "https://lihiDomain.com/assets/images/lihi-logo-primary.png",
-  "description": "lihiDomain.com - 除了賣你網域，我們還要幫助你成為更強的行銷人。",
+  "description": "lihiDomain.com - 除了提供網域, 我們還要幫你成為更厲害的行銷人",
   "sameAs": [
     "#",
     "#",
@@ -896,7 +963,7 @@ body.menu-open{overflow:hidden}
     <div class="hero-grid">
       <div class="hero-left">
         <div class="hero-mobile-eyebrow">lihi 品牌網域 x 行銷成長工具</div>
-        <h1 class="hero-title">除了賣你網域，我們還要幫助你成為更強的行銷人</h1>
+        <h1 class="hero-title">除了提供網域, 我們還要幫你成為更厲害的行銷人</h1>
         <p class="hero-mobile-lead">不是只幫你買一個網址，而是把品牌信任感、流量追蹤和後續成長工具一起準備好。</p>
         <div class="hero-mobile-signal-row" aria-hidden="true">
           <span class="hero-mobile-signal">品牌信任</span>
