@@ -159,22 +159,6 @@ body.menu-open{overflow:hidden}
 .hero-search button:hover{background:var(--cta-hover)}
 .hero-link{font-size:15px;color:var(--brand-blue);font-weight:500;transition:color .2s;margin-top:12px;display:inline-block}
 .hero-link:hover{color:var(--cta-hover)}
-.hero-search-wrap{max-width:560px}
-.hero-search-hint{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-.hero-search-hint span{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;background:rgba(255,107,157,0.12);color:var(--text-dark);font-size:13px;font-weight:600}
-#domain-results{margin-top:20px;display:none}
-.domain-results-card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.1);border:1px solid rgba(26,26,94,0.08)}
-.domain-results-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
-.domain-results-head h3{font-size:18px;font-weight:700;color:var(--dark-bg)}
-.domain-results-list{display:flex;flex-direction:column;gap:10px}
-.domain-result-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;background:#F8FAFC;border-radius:10px;border:1px solid #E5E7EB}
-.domain-result-main,.domain-result-side{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.domain-result-name{font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:600;color:var(--dark-bg);overflow-wrap:anywhere}
-.domain-result-status{font-size:12px;padding:2px 8px;border-radius:4px;font-weight:600}
-.domain-result-side{justify-content:flex-end}
-.domain-result-price{font-size:14px;color:var(--text-secondary)}
-.domain-result-btn{padding:6px 16px;border-radius:8px;font-size:14px;font-weight:600;border:none}
-.domain-results-note{margin-top:16px;font-size:13px;color:var(--text-secondary);text-align:center}
 
 /* ===== UPGRADED Dashboard Mockup ===== */
 .dashboard-mockup{perspective:1200px}
@@ -356,35 +340,6 @@ body.menu-open{overflow:hidden}
 
 .data-cta-wrap{text-align:center;margin-top:50px}
 
-/* ===== SECTION: PRICING ===== */
-.pricing-section{background:linear-gradient(180deg,#FFF5F8 0%,#fff 100%);padding:24px 0 var(--section-py);position:relative;overflow:hidden}
-.pricing-section::before{content:'';position:absolute;inset:auto auto 8% -4%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(26,26,94,0.08) 0%,transparent 72%);pointer-events:none}
-.pricing-section::after{content:'';position:absolute;inset:8% -4% auto auto;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,157,0.1) 0%,transparent 72%);pointer-events:none}
-.pricing-section .container{position:relative;z-index:1}
-.pricing-intro{text-align:center;max-width:720px;margin:0 auto 28px}
-.pricing-intro p{font-size:17px;line-height:1.7;color:var(--text-secondary)}
-.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.pricing-card{background:#fff;border-radius:20px;padding:28px;box-shadow:var(--shadow-rest);border:1px solid rgba(26,26,94,0.08);display:flex;flex-direction:column;gap:18px}
-.pricing-card.featured{background:linear-gradient(160deg,#1A1A5E 0%,#25257B 100%);color:#fff;box-shadow:0 20px 40px rgba(26,26,94,0.18)}
-.pricing-kicker{display:inline-flex;align-self:flex-start;padding:8px 12px;border-radius:999px;background:rgba(255,107,157,0.14);color:var(--brand-pink);font-size:12px;font-weight:700;letter-spacing:1px}
-.pricing-card.featured .pricing-kicker{background:rgba(255,255,255,0.14);color:#FFD0E0}
-.pricing-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
-.pricing-head h3{font-size:28px;line-height:1.2;color:inherit}
-.pricing-price{font-size:15px;color:var(--text-secondary);font-weight:600}
-.pricing-price strong{display:block;font-size:34px;line-height:1;color:var(--text-dark)}
-.pricing-card.featured .pricing-price,.pricing-card.featured .pricing-price strong{color:#fff}
-.pricing-note{font-size:15px;line-height:1.7;color:var(--text-secondary)}
-.pricing-card.featured .pricing-note{color:rgba(226,232,240,0.9)}
-.pricing-list{list-style:none;display:grid;gap:12px}
-.pricing-list li{display:flex;gap:10px;font-size:15px;line-height:1.6;color:inherit}
-.pricing-list li::before{content:'✓';color:var(--brand-pink);font-weight:700;flex-shrink:0}
-.pricing-card.featured .pricing-list li::before{color:#FFD0E0}
-.pricing-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:auto}
-.pricing-section .btn-secondary{border-color:rgba(26,26,94,0.18)}
-.pricing-card.featured .btn-secondary{border-color:rgba(255,255,255,0.26);color:#fff}
-.pricing-card.featured .btn-secondary:hover{background:#fff;color:var(--dark-bg)}
-.pricing-link{font-size:14px;font-weight:700;color:var(--brand-pink)}
-
 /* ===== SECTION: TESTIMONIALS ===== */
 .testimonials{background:#fff;padding:16px 0 var(--section-py);position:relative;overflow:hidden}
 .testimonials .container{overflow:visible}
@@ -525,19 +480,9 @@ body.menu-open{overflow:hidden}
   .mdc-bar:nth-child(6){height:100%;background:#1A1A5E}
   .mdc-link-row{font-size:6px;color:var(--text-secondary);padding:2px 0;border-top:1px solid #f0f0f0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .mdc-ab{font-size:5px;background:rgba(255,107,157,0.15);color:var(--brand-pink);padding:1px 3px;border-radius:2px;font-weight:600}
-  .hero-search-wrap{max-width:100%}
   .hero-search{flex-direction:column;gap:10px;max-width:100%}
   .hero-search input{border:2px solid rgba(26,26,94,0.15);border-radius:var(--input-radius);width:100%}
   .hero-search button{border-radius:var(--input-radius);padding:15px;text-align:center;width:100%}
-  .hero-search-hint{gap:8px}
-  .hero-search-hint span{font-size:12px;padding:7px 10px}
-  .domain-results-card{padding:16px}
-  .domain-results-head{align-items:flex-start}
-  .domain-results-head h3{font-size:16px}
-  .domain-result-row{flex-direction:column;align-items:flex-start;padding:12px}
-  .domain-result-main,.domain-result-side{width:100%}
-  .domain-result-side{justify-content:space-between}
-  .domain-result-btn{width:100%;padding:12px}
   .hero-link{display:block;text-align:center;font-weight:700;margin-top:12px;margin-bottom:0}
   .hero-right{display:none}
   .dashboard-mockup{perspective:none}
@@ -626,19 +571,6 @@ body.menu-open{overflow:hidden}
   .test-company{font-size:11px}
   .test-quote-mark{font-size:36px;top:4px;left:10px}
 
-  /* --- 7.5 方案價格 --- */
-  .pricing-section{padding:20px 0 28px}
-  .pricing-intro{margin-bottom:18px}
-  .pricing-intro p{font-size:15px}
-  .pricing-grid{grid-template-columns:1fr;gap:14px}
-  .pricing-card{padding:18px 16px;border-radius:16px;gap:14px}
-  .pricing-head{flex-direction:column;align-items:flex-start;gap:10px}
-  .pricing-head h3{font-size:24px}
-  .pricing-price strong{font-size:30px}
-  .pricing-note,.pricing-list li{font-size:14px}
-  .pricing-actions{flex-direction:column}
-  .pricing-actions .btn-primary,.pricing-actions .btn-secondary{width:100%}
-
   /* --- 8. FAQ --- */
   .faq-question{font-size:15px;padding:16px 0}
   .faq-answer-inner{font-size:14px;line-height:1.6;padding:0 0 16px}
@@ -674,9 +606,9 @@ body.menu-open{overflow:hidden}
   "logo": "https://lihiDomain.com/assets/images/lihi-logo-primary.png",
   "description": "lihiDomain.com - 除了賣你網域，我們還要幫助你成為更強的行銷人。",
   "sameAs": [
-    "https://www.facebook.com/lihi.io",
-    "https://www.instagram.com/lihi.io.tw",
-    "https://www.youtube.com/@lihi_io"
+    "#",
+    "#",
+    "#"
   ]
 }
 </script>
@@ -743,24 +675,23 @@ body.menu-open{overflow:hidden}
 <!-- ===== NAV ===== -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#hero" class="nav-logo"><img src="./assets/images/lihi-logo-primary.png" alt="lihi" style="height:40px"></a>
+    <a href="#" class="nav-logo"><img src="./assets/images/lihi-logo-primary.png" alt="lihi" style="height:40px"></a>
     <ul class="nav-links">
       <li><a href="#hero">品牌網域</a></li>
-      <li><a href="#tools">行銷工具</a></li>
-      <li><a href="#pricing">方案價格</a></li>
+      <li><a href="#features">行銷工具</a></li>
       <li class="has-dropdown">
         <a href="javascript:void(0)">行銷資源 ▾</a>
         <ul class="nav-dropdown">
-          <li><a href="https://knowledge.lihi.io/" target="_blank" rel="noopener noreferrer">知識庫</a></li>
-          <li><a href="https://knowledge.lihi.io/recommended-course-ch/" target="_blank" rel="noopener noreferrer">官方課程推薦</a></li>
-          <li><a href="https://knowledge.lihi.io/verify-whitelist-ch/" target="_blank" rel="noopener noreferrer">LIHI 證照驗證</a></li>
+          <li><a href="#">知識庫</a></li>
+          <li><a href="#/recommended-course-ch/">官方課程推薦</a></li>
+          <li><a href="#">LIHI 證照驗證</a></li>
         </ul>
       </li>
-      <li><a href="https://knowledge.lihi.io/about-us-ch/" target="_blank" rel="noopener noreferrer">關於我們</a></li>
+      <li><a href="#/about-us-ch/">關於我們</a></li>
     </ul>
     <div class="nav-cta desktop">
-      <a href="https://app.lihi.io/admin/login" class="btn-secondary" style="padding:8px 20px;font-size:14px" target="_blank" rel="noopener noreferrer">登入</a>
-      <a href="https://app.lihi.io/admin/register" class="btn-primary" style="padding:10px 24px;font-size:15px" target="_blank" rel="noopener noreferrer">免費註冊</a>
+      <a href="#featureslogin" class="btn-secondary" style="padding:8px 20px;font-size:14px">登入</a>
+      <a href="#register" class="btn-primary" style="padding:10px 24px;font-size:15px">免費註冊</a>
     </div>
     <button class="nav-hamburger" id="hamburger" aria-label="選單">
       <span></span><span></span><span></span>
@@ -768,18 +699,17 @@ body.menu-open{overflow:hidden}
   </div>
   <div class="nav-mobile-menu" id="mobileMenu">
     <a href="#hero">品牌網域</a>
-    <a href="#tools">行銷工具</a>
-    <a href="#pricing">方案價格</a>
+    <a href="#features">行銷工具</a>
     <a href="javascript:void(0)" class="mobile-submenu-toggle">行銷資源 ▾</a>
     <div class="mobile-submenu">
-      <a href="https://knowledge.lihi.io/" target="_blank" rel="noopener noreferrer">知識庫</a>
-      <a href="https://knowledge.lihi.io/recommended-course-ch/" target="_blank" rel="noopener noreferrer">官方課程推薦</a>
-      <a href="https://knowledge.lihi.io/verify-whitelist-ch/" target="_blank" rel="noopener noreferrer">LIHI 證照驗證</a>
+      <a href="#">知識庫</a>
+      <a href="#/recommended-course-ch/">官方課程推薦</a>
+      <a href="#">LIHI 證照驗證</a>
     </div>
-    <a href="https://knowledge.lihi.io/about-us-ch/" target="_blank" rel="noopener noreferrer">關於我們</a>
+    <a href="#/about-us-ch/">關於我們</a>
     <div class="mobile-cta-row">
-      <a href="https://app.lihi.io/admin/login" class="btn-secondary" target="_blank" rel="noopener noreferrer">登入</a>
-      <a href="https://app.lihi.io/admin/register" class="btn-primary" style="color:#fff" target="_blank" rel="noopener noreferrer">免費註冊</a>
+      <a href="#featureslogin" class="btn-secondary">登入</a>
+      <a href="#register" class="btn-primary" style="color:#fff">免費註冊</a>
     </div>
   </div>
   <div class="nav-mobile-overlay" id="mobileOverlay"></div>
@@ -834,18 +764,11 @@ body.menu-open{overflow:hidden}
             </div>
           </div>
         </div>
-        <div class="hero-search-wrap" id="domain-search">
-          <div class="hero-search">
-            <input type="text" id="domain-search-input" placeholder="輸入你喜歡的網域名稱，查詢是否可用">
-            <button id="domain-search-btn">查詢網域</button>
-          </div>
-          <div class="hero-search-hint">
-            <span>品牌網域搜尋</span>
-            <span>買網域送 2 個月 Business</span>
-            <span>中文客服支援</span>
-          </div>
+        <div class="hero-search" id="domain-search">
+          <input type="text" id="domain-search-input" placeholder="輸入你喜歡的網域名稱，查詢是否可用">
+          <button id="domain-search-btn">查詢網域</button>
         </div>
-        <a href="#pain" class="hero-link">先看品牌常見痛點</a>
+        <a href="#pain" class="hero-link"></a>
       </div>
       <div class="hero-right">
         <div class="dashboard-mockup">
@@ -1202,54 +1125,7 @@ body.menu-open{overflow:hidden}
       </div>
     </div>
     <div class="data-cta-wrap">
-      <a href="#domain-search" class="btn-primary">立即搜尋 — 找到你的網域</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SECTION 6.5: PRICING ===== -->
-<section class="pricing-section" id="pricing">
-  <div class="container">
-    <div class="pricing-intro">
-      <div class="section-subtitle center">方案價格</div>
-      <h2 class="section-title center">先免費用，再把品牌網域接進來</h2>
-      <p>手機上先看清楚你的起點就夠了。免費方案可直接開始測試，購買品牌網域後再把流量追蹤、分流與品牌識別全部串起來。</p>
-    </div>
-    <div class="pricing-grid">
-      <article class="pricing-card">
-        <span class="pricing-kicker">FREE START</span>
-        <div class="pricing-head">
-          <h3>免費方案</h3>
-          <div class="pricing-price"><strong>NT$0</strong>先開始驗證市場</div>
-        </div>
-        <p class="pricing-note">適合先建立短網址流程、收集點擊數據、測試受眾反應。</p>
-        <ul class="pricing-list">
-          <li>500 組短網址可直接使用</li>
-          <li>支援分流、連結替換、QR Code</li>
-          <li>不需工程背景，快速上手</li>
-        </ul>
-        <div class="pricing-actions">
-          <a href="https://app.lihi.io/admin/register" class="btn-primary" target="_blank" rel="noopener noreferrer">免費註冊</a>
-          <a href="https://knowledge.lihi.io/pricing/" class="btn-secondary" target="_blank" rel="noopener noreferrer">看完整價格</a>
-        </div>
-      </article>
-      <article class="pricing-card featured">
-        <span class="pricing-kicker">DOMAIN BOOST</span>
-        <div class="pricing-head">
-          <h3>品牌網域方案</h3>
-          <div class="pricing-price"><strong>加值升級</strong>從品牌信任開始放大</div>
-        </div>
-        <p class="pricing-note">購買品牌網域後，直接把短網址從工具變成你的品牌資產，還能獲得兩個月 Business 體驗。</p>
-        <ul class="pricing-list">
-          <li>自訂品牌網域，提高信任與 CTR</li>
-          <li>買網域送 2 個月 Business 方案</li>
-          <li>搭配數據追蹤、AB 分流與中文客服</li>
-        </ul>
-        <div class="pricing-actions">
-          <a href="#domain-search" class="btn-primary">先查品牌網域</a>
-          <a href="https://app.lihi.io/admin/login" class="btn-secondary" target="_blank" rel="noopener noreferrer">登入後購買</a>
-        </div>
-      </article>
+      <a href="#register" class="btn-primary">立即搜尋 — 找到你的網域</a>
     </div>
   </div>
 </section>
@@ -1391,7 +1267,7 @@ body.menu-open{overflow:hidden}
   <div class="container">
     <h2>準備好了嗎？</h2>
     <p class="subtitle">立即搜尋你的品牌網域</p>
-    <a href="#domain-search" class="btn-primary">立即搜尋 — 找到你的網域</a>
+    <a href="#register" class="btn-primary">立即搜尋 — 找到你的網域</a>
   </div>
 </section>
 
@@ -1406,20 +1282,20 @@ body.menu-open{overflow:hidden}
       </div>
       <div class="footer-right">
         <div class="footer-links">
-          <a href="https://knowledge.lihi.io/termsofuse-ch/" target="_blank" rel="noopener noreferrer">服務條款</a>
-          <a href="https://knowledge.lihi.io/about-privacy/" target="_blank" rel="noopener noreferrer">隱私權政策</a>
-          <a href="https://knowledge.lihi.io/service-level-agreement/" target="_blank" rel="noopener noreferrer">服務等級</a>
-          <a href="https://report.lihi.io" target="_blank" rel="noopener noreferrer">檢舉網址</a>
+          <a href="#/terms-of-use/" target="_blank">服務條款</a>
+          <a href="#/privacy-policy/" target="_blank">隱私權政策</a>
+          <a href="#/service-level-agreement/" target="_blank">服務等級</a>
+          <a href="https://report.lihi.io" target="_blank">檢舉網址</a>
           <a href="/cdn-cgi/l/email-protection#e093859296898385a08c898889ce898f"><span class="__cf_email__" data-cfemail="42312730342b2127022e2b2a2b6c2b2d">[email&#160;protected]</span></a>
         </div>
         <div class="footer-social">
-          <a href="https://www.facebook.com/lihi.io" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a href="#" target="_blank" aria-label="Facebook">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
-          <a href="https://www.instagram.com/lihi.io.tw" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="#" target="_blank" aria-label="Instagram">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
-          <a href="https://www.youtube.com/@lihi_io" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <a href="#" target="_blank" aria-label="YouTube">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
         </div>
@@ -1616,17 +1492,18 @@ body.menu-open{overflow:hidden}
   // Create results container if not exists
   var resultsContainer = document.createElement('div');
   resultsContainer.id = 'domain-results';
+  resultsContainer.style.cssText = 'margin-top:20px;display:none;';
   heroLeft.appendChild(resultsContainer);
 
   function mockSearch(keyword) {
     var tlds = ['.com', '.io', '.tw', '.co', '.net', '.shop', '.store'];
-    var resultsHtml = '<div class="domain-results-card">';
-    resultsHtml += '<div class="domain-results-head">';
-    resultsHtml += '<h3>"' + keyword + '" 搜尋結果</h3>';
+    var resultsHtml = '<div style="background:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.1);border:1px solid rgba(26,26,94,0.08);">';
+    resultsHtml += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">';
+    resultsHtml += '<h3 style="font-size:18px;font-weight:700;color:var(--dark-bg);">"' + keyword + '" 搜尋結果</h3>';
     resultsHtml += '<button onclick="closeResults()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--text-secondary);">×</button>';
     resultsHtml += '</div>';
     
-    resultsHtml += '<div class="domain-results-list">';
+    resultsHtml += '<div style="display:flex;flex-direction:column;gap:10px;">';
     
     tlds.forEach(function(tld, i) {
       var isAvailable = Math.random() > 0.3;
@@ -1634,23 +1511,23 @@ body.menu-open{overflow:hidden}
       var statusText = isAvailable ? '可註冊' : '已註冊';
       var price = isAvailable ? 'NT$ ' + (Math.floor(Math.random() * 20 + 5) * 100) + '/年' : '—';
       var btnStyle = isAvailable 
-        ? 'background:var(--brand-pink);color:#fff;cursor:pointer;'
-        : 'background:#E5E7EB;color:#9CA3AF;cursor:not-allowed;';
+        ? 'background:var(--brand-pink);color:#fff;padding:6px 16px;border-radius:8px;font-size:14px;font-weight:600;border:none;cursor:pointer;'
+        : 'background:#E5E7EB;color:#9CA3AF;padding:6px 16px;border-radius:8px;font-size:14px;font-weight:600;border:none;cursor:not-allowed;';
       
-      resultsHtml += '<div class="domain-result-row">';
-      resultsHtml += '<div class="domain-result-main">';
-      resultsHtml += '<div class="domain-result-name">' + keyword + tld + '</div>';
-      resultsHtml += '<span class="domain-result-status" style="background:' + (isAvailable ? '#F0FDF4' : '#FEF2F2') + ';color:' + statusColor + ';">' + statusText + '</span>';
+      resultsHtml += '<div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#F8FAFC;border-radius:10px;border:1px solid #E5E7EB;">';
+      resultsHtml += '<div style="display:flex;align-items:center;gap:12px;">';
+      resultsHtml += '<div style="font-family:JetBrains Mono,monospace;font-size:15px;font-weight:600;color:var(--dark-bg);">' + keyword + tld + '</div>';
+      resultsHtml += '<span style="font-size:12px;padding:2px 8px;border-radius:4px;background:' + (isAvailable ? '#F0FDF4' : '#FEF2F2') + ';color:' + statusColor + ';font-weight:600;">' + statusText + '</span>';
       resultsHtml += '</div>';
-      resultsHtml += '<div class="domain-result-side">';
-      resultsHtml += '<span class="domain-result-price">' + price + '</span>';
-      resultsHtml += '<button class="domain-result-btn" ' + (isAvailable ? '' : 'disabled ') + 'style="' + btnStyle + '">' + (isAvailable ? '加入購物車' : '不可用') + '</button>';
+      resultsHtml += '<div style="display:flex;align-items:center;gap:16px;">';
+      resultsHtml += '<span style="font-size:14px;color:var(--text-secondary);">' + price + '</span>';
+      resultsHtml += '<button ' + (isAvailable ? '' : 'disabled ') + 'style="' + btnStyle + '">' + (isAvailable ? '加入購物車' : '不可用') + '</button>';
       resultsHtml += '</div>';
       resultsHtml += '</div>';
     });
     
     resultsHtml += '</div>';
-    resultsHtml += '<p class="domain-results-note">以上價格僅供參考，實際價格以結帳頁面為準</p>';
+    resultsHtml += '<p style="margin-top:16px;font-size:13px;color:var(--text-secondary);text-align:center;">以上價格僅供參考，實際價格以結帳頁面為準</p>';
     resultsHtml += '</div>';
     
     resultsContainer.innerHTML = resultsHtml;
