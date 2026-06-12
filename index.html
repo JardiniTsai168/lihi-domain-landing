@@ -353,18 +353,20 @@ body.menu-open{overflow:hidden}
 .data-cta-wrap{text-align:center;margin-top:50px}
 
 /* Promo Section */
-.promo-section{text-align:center;margin:32px auto 0;max-width:640px}
-.promo-body{background:linear-gradient(180deg,#fffdfd,#fff5f8);color:#2A2A68;padding:48px 56px 40px;border:1px solid #ead8e3;border-radius:24px;box-shadow:0 20px 36px rgba(26,26,94,.08);position:relative;overflow:hidden}
+.promo-section{text-align:center;margin:0 auto;padding:0}
+.promo-note{margin:0 auto 18px;max-width:980px;padding:0 22px;color:#1A1A5E;font-size:26px;font-weight:800;line-height:1.35;text-align:center}
+.promo-body{background:linear-gradient(180deg,#fffdfd,#fff5f8);color:#2A2A68;padding:68px 72px 36px;border:1px solid #ead8e3;border-radius:30px;box-shadow:0 20px 36px rgba(26,26,94,.08);position:relative;overflow:hidden}
 .promo-body::before{content:'';position:absolute;top:-40px;right:-40px;width:140px;height:140px;background:radial-gradient(circle,rgba(255,107,157,.10) 0%,transparent 70%);pointer-events:none;border-radius:50%}
-.promo-pill{display:inline-block;background:#1A1A5E;color:#fff;padding:10px 28px;border-radius:12px;font-size:18px;font-weight:500;margin-bottom:16px;position:relative;z-index:1}
-.promo-headline{font-size:22px;margin-bottom:24px;color:#2A2A68;position:relative;z-index:1}
-.promo-headline strong{font:900 32px/1 'Inter',sans-serif;color:#FF6B9D;text-shadow:none}
-.gift-list{max-width:520px;margin:0 auto 24px;display:grid;gap:14px;text-align:left;position:relative;z-index:1}
-.gift-item{position:relative;background:#fff;border:1px solid #f0d6e2;border-radius:16px;color:#1A1A5E;padding:14px 24px 16px 80px;font-size:18px;font-weight:700;box-shadow:0 10px 22px rgba(26,26,94,.06);line-height:1.4}
-.gift-item .num{position:absolute;left:-22px;top:50%;transform:translateY(-50%);width:64px;height:64px;border-radius:50%;background:#FF6B9D;color:#fff;display:flex;align-items:center;justify-content:center;font:900 48px/1 'Inter',sans-serif;box-shadow:0 10px 18px rgba(255,107,157,.24)}
-.gift-item small{font-size:14px;font-weight:500;color:var(--text-secondary);margin-left:6px}
-.promo-foot{font-size:16px;line-height:1.6;color:#6b7399;margin-bottom:20px;position:relative;z-index:1}
-.promo-copy-btn{display:inline-flex;align-items:center;gap:6px;background:var(--brand-pink);color:#fff;border:none;padding:12px 28px;border-radius:999px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s ease;position:relative;z-index:1}
+.promo-pill{display:inline-block;background:#1A1A5E;color:#fff;padding:11px 42px;border-radius:12px;font-size:30px;font-weight:500;margin-bottom:4px;position:relative;z-index:1}
+.promo-code{font-size:28px;margin-bottom:22px;color:#2A2A68;position:relative;z-index:1}
+.promo-code strong{font:900 36px/1 'Inter',sans-serif;color:#FF6B9D;text-shadow:none}
+.gift-list{max-width:640px;margin:32px auto 28px;display:grid;gap:15px;text-align:left;position:relative;z-index:1}
+.gift-item{position:relative;background:#fff;border:1px solid #f0d6e2;border-radius:16px;color:#1A1A5E;padding:12px 28px 14px 92px;font-size:30px;font-weight:900;box-shadow:0 10px 22px rgba(26,26,94,.06)}
+.gift-item .num{position:absolute;left:-26px;top:50%;transform:translateY(-50%);width:72px;height:72px;border-radius:50%;background:#FF6B9D;color:#fff;display:flex;align-items:center;justify-content:center;font:900 56px/1 'Inter',sans-serif;box-shadow:0 10px 18px rgba(255,107,157,.24)}
+.gift-item small{font-size:21px;font-weight:500;margin-left:4px}
+.promo-foot{font-size:29px;line-height:1.6;color:#2A2A68;margin-bottom:24px;position:relative;z-index:1}
+.promo-foot strong{font-size:36px;color:#FF6B9D;text-shadow:none}
+.promo-copy-btn{display:inline-flex;align-items:center;gap:6px;background:var(--brand-pink);color:#fff;border:none;padding:14px 32px;border-radius:999px;font-size:18px;font-weight:700;cursor:pointer;transition:all .2s ease;position:relative;z-index:1}
 .promo-copy-btn:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,107,157,.22)}
 .promo-copy-btn.copied{background:var(--success)}
 
@@ -673,16 +675,18 @@ body.menu-open{overflow:hidden}
   }
 
   /* === 8.5 Promo section 手機版 === */
-  .promo-body{padding:28px 20px 28px;border-radius:18px}
-  .promo-pill{font-size:15px;padding:8px 18px;margin-bottom:12px}
-  .promo-headline{font-size:17px;margin-bottom:16px}
-  .promo-headline strong{font-size:22px}
-  .gift-list{margin:0 auto 16px;gap:12px;padding-left:16px}
-  .gift-item{font-size:15px;padding:12px 16px 12px 56px;border-radius:12px}
-  .gift-item .num{left:-12px;width:48px;height:48px;font-size:32px}
-  .gift-item small{display:block;margin-left:0;margin-top:2px;font-size:13px}
-  .promo-foot{font-size:14px;margin-bottom:16px}
-  .promo-copy-btn{padding:10px 20px;font-size:14px}
+  .promo-note{font-size:16px;line-height:1.25;margin-bottom:10px;padding:0 8px}
+  .promo-body{padding:34px 20px 28px;border-radius:18px}
+  .promo-pill{font-size:18px;padding:8px 16px;white-space:nowrap;margin-bottom:2px}
+  .promo-code{margin-top:2px;margin-bottom:10px;font-size:16px}
+  .promo-code strong{font-size:20px;line-height:inherit}
+  .gift-list{margin:0 auto 28px;gap:12px;padding-left:18px}
+  .gift-item{font-size:20px;padding:10px 14px 12px 52px;border-radius:12px}
+  .gift-item .num{left:-14px;width:48px;height:48px;font-size:32px}
+  .gift-item small{display:block;margin-left:0;margin-top:2px;font-size:14px}
+  .promo-foot{font-size:18px;line-height:1.5;margin-bottom:16px}
+  .promo-foot strong{font-size:22px}
+  .promo-copy-btn{padding:10px 24px;font-size:15px}
 
   /* === 9. Footer 連結點擊區 === */
   .footer-links a{display:inline-block;padding:6px 0}
@@ -1237,15 +1241,16 @@ body.menu-open{overflow:hidden}
       </div>
     </div>
     <div class="promo-section fade-in" style="transition-delay:.2s">
+      <div class="promo-note">限時優惠 — 新用戶專屬</div>
       <div class="promo-body">
-        <div class="promo-pill">限時優惠</div>
-        <div class="promo-headline">結帳時輸入 <strong>ENDomain99</strong> 即可獲得</div>
+        <div class="promo-pill">在 lihi 購買任何 .link 或是 .tw 網域</div>
+        <div class="promo-code">結帳時輸入 <strong>ENDomain99</strong> 即可獲得</div>
         <div class="gift-list">
           <div class="gift-item"><span class="num">1</span>一個你專屬的品牌網域 <small>原價 $680 起 → 特價 $99</small></div>
         </div>
-        <p class="promo-foot">馬上開始，讓你的品牌更有識別度！<br>現在行動，讓你的每一塊錢都花得有價值</p>
+        <p class="promo-foot">市價超過 <strong>$680</strong> 的服務，讓你一次體驗。<br>馬上開始，讓你的每一塊錢都花得有價值!</p>
         <button type="button" class="promo-copy-btn" onclick="copyPromoCode()" aria-label="複製折扣碼">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
           複製折扣碼
         </button>
       </div>
