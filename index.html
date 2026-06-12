@@ -352,6 +352,18 @@ body.menu-open{overflow:hidden}
 
 .data-cta-wrap{text-align:center;margin-top:50px}
 
+/* Promo Banner */
+.promo-banner{background:linear-gradient(135deg,#1A1A5E,#2A2A7E);border-radius:var(--card-radius);padding:36px 28px;text-align:center;color:#fff;margin:36px auto 0;max-width:600px;position:relative;overflow:hidden;box-shadow:var(--shadow-elevated)}
+.promo-banner::before{content:'';position:absolute;top:-50%;left:-20%;width:300px;height:300px;background:radial-gradient(circle,rgba(255,107,157,0.2) 0%,transparent 70%);pointer-events:none;border-radius:50%}
+.promo-label{display:inline-block;padding:6px 18px;border-radius:999px;background:rgba(255,107,157,0.25);color:#FFB3C6;font-size:13px;font-weight:700;letter-spacing:2px;margin-bottom:16px;position:relative;z-index:1}
+.promo-title{font-size:24px;font-weight:700;margin-bottom:14px;position:relative;z-index:1}
+.promo-price{color:#FF6B9D;font-size:36px;font-weight:800;display:inline-block;transform:scale(1.2);margin:0 4px;position:relative;z-index:1}
+.promo-code{font-size:15px;color:var(--text-light);margin-bottom:18px;position:relative;z-index:1}
+.promo-code-highlight{background:rgba(255,107,157,0.25);color:#fff;padding:4px 12px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:15px}
+.promo-copy-btn{background:var(--cta-orange);color:#fff;border:none;padding:12px 32px;border-radius:var(--btn-radius);font-size:15px;font-weight:700;cursor:pointer;transition:all .2s ease;position:relative;z-index:1}
+.promo-copy-btn:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.promo-copy-btn.copied{background:var(--success)}
+
 /* ===== SECTION: TESTIMONIALS ===== */
 .testimonials{background:#fff;padding:16px 0 var(--section-py);position:relative;overflow:hidden}
 .testimonials .container{overflow:visible}
@@ -655,6 +667,14 @@ body.menu-open{overflow:hidden}
     border-color:var(--brand-pink);
     box-shadow:0 0 0 3px rgba(255,107,157,0.15);
   }
+
+  /* === 8.5 Promo banner 手機版 === */
+  .promo-banner{padding:28px 20px;margin:28px 16px 0}
+  .promo-title{font-size:20px}
+  .promo-price{font-size:28px;transform:scale(1.1)}
+  .promo-code{font-size:14px}
+  .promo-code-highlight{font-size:14px}
+  .promo-copy-btn{padding:10px 24px;font-size:14px}
 
   /* === 9. Footer 連結點擊區 === */
   .footer-links a{display:inline-block;padding:6px 0}
@@ -1208,6 +1228,12 @@ body.menu-open{overflow:hidden}
         <img src="./assets/images/fb-ad-compare.png?new" alt="Facebook 廣告數據對比 — 品牌網址 vs 一般短網址">
       </div>
     </div>
+    <div class="promo-banner fade-in" style="transition-delay:.2s">
+      <div class="promo-label">限時優惠</div>
+      <h3 class="promo-title">一個網域只要 <span class="promo-price">$99</span> 台幣</h3>
+      <p class="promo-code">結帳輸入折扣碼 <span class="promo-code-highlight" id="promoCode">Domain99</span></p>
+      <button type="button" class="promo-copy-btn" onclick="copyPromoCode()">複製折扣碼</button>
+    </div>
     <div class="data-cta-wrap">
       <a href="#register" class="btn-primary">立即搜尋 — 找到你的網域</a>
     </div>
@@ -1692,6 +1718,43 @@ body.menu-open{overflow:hidden}
       }
     });
   });
+  // ===== COPY PROMO CODE =====
+  window.copyPromoCode = function() {
+    var code = 'Domain99';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(function() {
+        showCopiedState();
+      }).catch(function() {
+        fallbackCopy(code);
+      });
+    } else {
+      fallbackCopy(code);
+    }
+    function fallbackCopy(text) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showCopiedState();
+      } catch (e) {}
+      document.body.removeChild(ta);
+    }
+    function showCopiedState() {
+      var btn = document.querySelector('.promo-copy-btn');
+      if (!btn) return;
+      var originalText = btn.textContent;
+      btn.textContent = '已複製!';
+      btn.classList.add('copied');
+      setTimeout(function() {
+        btn.textContent = originalText;
+        btn.classList.remove('copied');
+      }, 2000);
+    }
+  };
 
 })();
 </script>
