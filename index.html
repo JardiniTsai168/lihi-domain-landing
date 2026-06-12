@@ -352,19 +352,20 @@ body.menu-open{overflow:hidden}
 
 .data-cta-wrap{text-align:center;margin-top:50px}
 
-/* Promo Banner */
-.promo-banner{display:flex;align-items:center;gap:0;margin:24px auto 0;max-width:560px;background:#fff;border:1px solid rgba(255,107,157,.15);border-radius:14px;padding:14px 18px;box-shadow:0 2px 10px rgba(255,107,157,.08);position:relative;overflow:hidden}
-.promo-banner::before{content:'';position:absolute;top:-30px;right:-30px;width:100px;height:100px;background:radial-gradient(circle,rgba(255,107,157,.10) 0%,transparent 70%);pointer-events:none;border-radius:50%}
-.promo-left{flex:1;display:flex;flex-direction:column;gap:4px;position:relative;z-index:1}
-.promo-tag{display:inline-flex;align-self:flex-start;align-items:center;gap:4px;background:rgba(255,107,157,.10);color:var(--brand-pink);font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;line-height:1}
-.promo-price-line{font-size:15px;font-weight:600;color:var(--dark-bg);line-height:1.3}
-.promo-price{color:var(--brand-pink);font-size:22px;font-weight:800;margin-left:2px}
-.promo-divider{width:1px;align-self:stretch;background:linear-gradient(180deg,transparent,rgba(255,107,157,.25),transparent);margin:0 14px;flex-shrink:0}
-.promo-right{display:flex;align-items:center;gap:8px;position:relative;z-index:1;flex-shrink:0}
-.promo-code-label{font-size:11px;color:var(--text-secondary);font-weight:500;display:none}
-.promo-code{background:#1A1A5E;color:#fff;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;padding:6px 12px;border-radius:8px;letter-spacing:.5px;line-height:1}
-.promo-copy-btn{display:inline-flex;align-items:center;gap:5px;background:var(--brand-pink);color:#fff;border:none;padding:6px 12px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;transition:all .15s ease;line-height:1}
-.promo-copy-btn:hover{background:var(--cta-hover);transform:translateY(-1px)}
+/* Promo Section */
+.promo-section{text-align:center;margin:32px auto 0;max-width:640px}
+.promo-body{background:linear-gradient(180deg,#fffdfd,#fff5f8);color:#2A2A68;padding:48px 56px 40px;border:1px solid #ead8e3;border-radius:24px;box-shadow:0 20px 36px rgba(26,26,94,.08);position:relative;overflow:hidden}
+.promo-body::before{content:'';position:absolute;top:-40px;right:-40px;width:140px;height:140px;background:radial-gradient(circle,rgba(255,107,157,.10) 0%,transparent 70%);pointer-events:none;border-radius:50%}
+.promo-pill{display:inline-block;background:#1A1A5E;color:#fff;padding:10px 28px;border-radius:12px;font-size:18px;font-weight:500;margin-bottom:16px;position:relative;z-index:1}
+.promo-headline{font-size:22px;margin-bottom:24px;color:#2A2A68;position:relative;z-index:1}
+.promo-headline strong{font:900 32px/1 'Inter',sans-serif;color:#FF6B9D;text-shadow:none}
+.gift-list{max-width:520px;margin:0 auto 24px;display:grid;gap:14px;text-align:left;position:relative;z-index:1}
+.gift-item{position:relative;background:#fff;border:1px solid #f0d6e2;border-radius:16px;color:#1A1A5E;padding:14px 24px 16px 80px;font-size:18px;font-weight:700;box-shadow:0 10px 22px rgba(26,26,94,.06);line-height:1.4}
+.gift-item .num{position:absolute;left:-22px;top:50%;transform:translateY(-50%);width:64px;height:64px;border-radius:50%;background:#FF6B9D;color:#fff;display:flex;align-items:center;justify-content:center;font:900 48px/1 'Inter',sans-serif;box-shadow:0 10px 18px rgba(255,107,157,.24)}
+.gift-item small{font-size:14px;font-weight:500;color:var(--text-secondary);margin-left:6px}
+.promo-foot{font-size:16px;line-height:1.6;color:#6b7399;margin-bottom:20px;position:relative;z-index:1}
+.promo-copy-btn{display:inline-flex;align-items:center;gap:6px;background:var(--brand-pink);color:#fff;border:none;padding:12px 28px;border-radius:999px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s ease;position:relative;z-index:1}
+.promo-copy-btn:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,107,157,.22)}
 .promo-copy-btn.copied{background:var(--success)}
 
 /* ===== SECTION: TESTIMONIALS ===== */
@@ -671,16 +672,17 @@ body.menu-open{overflow:hidden}
     box-shadow:0 0 0 3px rgba(255,107,157,0.15);
   }
 
-  /* === 8.5 Promo banner 手機版 === */
-  .promo-banner{flex-direction:column;padding:12px 14px;margin:16px 0 0;max-width:100%;gap:10px;border-radius:12px}
-  .promo-divider{display:none}
-  .promo-left{width:100%;align-items:center;flex-direction:row;justify-content:space-between}
-  .promo-price-line{font-size:14px}
-  .promo-price{font-size:18px}
-  .promo-right{width:100%;justify-content:center;gap:8px;padding-top:10px;border-top:1px dashed rgba(255,107,157,.2)}
-  .promo-code-label{display:inline;font-size:11px;margin-right:auto}
-  .promo-code{font-size:12px;padding:5px 10px}
-  .promo-copy-btn{padding:5px 10px;font-size:11px}
+  /* === 8.5 Promo section 手機版 === */
+  .promo-body{padding:28px 20px 28px;border-radius:18px}
+  .promo-pill{font-size:15px;padding:8px 18px;margin-bottom:12px}
+  .promo-headline{font-size:17px;margin-bottom:16px}
+  .promo-headline strong{font-size:22px}
+  .gift-list{margin:0 auto 16px;gap:12px;padding-left:16px}
+  .gift-item{font-size:15px;padding:12px 16px 12px 56px;border-radius:12px}
+  .gift-item .num{left:-12px;width:48px;height:48px;font-size:32px}
+  .gift-item small{display:block;margin-left:0;margin-top:2px;font-size:13px}
+  .promo-foot{font-size:14px;margin-bottom:16px}
+  .promo-copy-btn{padding:10px 20px;font-size:14px}
 
   /* === 9. Footer 連結點擊區 === */
   .footer-links a{display:inline-block;padding:6px 0}
@@ -1234,18 +1236,17 @@ body.menu-open{overflow:hidden}
         <img src="./assets/images/fb-ad-compare.png?new" alt="Facebook 廣告數據對比 — 品牌網址 vs 一般短網址">
       </div>
     </div>
-    <div class="promo-banner fade-in" style="transition-delay:.2s">
-      <div class="promo-left">
-        <span class="promo-tag">限時優惠</span>
-        <div class="promo-price-line">一個網域只要 <span class="promo-price">$99</span></div>
-      </div>
-      <div class="promo-divider"></div>
-      <div class="promo-right">
-        <span class="promo-code-label">結帳折扣碼</span>
-        <span class="promo-code" id="promoCode">Domain99</span>
+    <div class="promo-section fade-in" style="transition-delay:.2s">
+      <div class="promo-body">
+        <div class="promo-pill">限時優惠</div>
+        <div class="promo-headline">結帳時輸入 <strong>ENDomain99</strong> 即可獲得</div>
+        <div class="gift-list">
+          <div class="gift-item"><span class="num">1</span>一個你專屬的品牌網域 <small>原價 $680 起 → 特價 $99</small></div>
+        </div>
+        <p class="promo-foot">馬上開始，讓你的品牌更有識別度！<br>現在行動，讓你的每一塊錢都花得有價值</p>
         <button type="button" class="promo-copy-btn" onclick="copyPromoCode()" aria-label="複製折扣碼">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-          複製
+          複製折扣碼
         </button>
       </div>
     </div>
@@ -1735,7 +1736,7 @@ body.menu-open{overflow:hidden}
   });
   // ===== COPY PROMO CODE =====
   window.copyPromoCode = function() {
-    var code = 'Domain99';
+    var code = 'ENDomain99';
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(code).then(function() {
         showCopiedState();
