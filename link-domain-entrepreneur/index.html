@@ -192,8 +192,9 @@ body.menu-open{overflow:hidden}
 .final-cta-card h2{font-size:clamp(30px,3vw,42px);line-height:1.15;margin-bottom:14px}
 .final-cta-card p{font-size:17px;line-height:1.9;color:rgba(255,255,255,.82);max-width:54ch}
 .final-cta-actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
-.final-cta-actions-row{display:flex;flex-wrap:wrap;gap:12px;width:fit-content;max-width:100%}
-.final-cta-offer{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;width:fit-content;max-width:100%;padding:16px 20px;border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.98) 0%,rgba(255,245,248,.96) 100%);box-shadow:0 18px 36px rgba(26,26,94,.18);overflow:hidden}
+.final-cta-actions-stack{display:flex;flex-direction:column;align-items:flex-start;gap:14px;width:min(100%,360px)}
+.final-cta-actions-row{display:flex;flex-wrap:wrap;gap:12px;width:100%}
+.final-cta-offer{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;width:100%;padding:15px 18px;border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.98) 0%,rgba(255,245,248,.96) 100%);box-shadow:0 18px 36px rgba(26,26,94,.18);overflow:hidden}
 .final-cta-offer::before,.final-cta-offer::after{content:'';position:absolute;top:50%;width:22px;height:22px;border-radius:50%;background:#2a257a;transform:translateY(-50%)}
 .final-cta-offer::before{left:-11px}
 .final-cta-offer::after{right:-11px}
@@ -251,7 +252,8 @@ body.menu-open{overflow:hidden}
   .faq-answer-inner{font-size:14px;padding:0 0 16px}
   .final-cta-card{padding:28px;border-radius:26px}
   .final-cta-card p{font-size:15px}
-  .final-cta-offer{margin-top:16px;grid-template-columns:1fr;width:100%;padding:18px}
+  .final-cta-actions-stack{width:100%}
+  .final-cta-offer{grid-template-columns:1fr;width:100%;padding:18px}
   .final-cta-offer::before,.final-cta-offer::after{display:none}
   .final-cta-offer-price{font-size:16px}
   .final-cta-offer-code{padding:14px 0 0;border-left:0;border-top:2px dashed rgba(26,26,94,.14);align-items:flex-start}
@@ -601,18 +603,20 @@ body.menu-open{overflow:hidden}
         <p>如果你正在測試新專案、整理多個流量渠道，或想幫品牌建立更清楚的導流入口，可以先從適合的 .link 網域與可追蹤的連結管理開始。</p>
       </div>
       <div class="final-cta-actions">
-        <div class="final-cta-actions-row">
-          <a class="btn-primary" href="https://lihidomain.com/#domain-search">立即搜尋網域</a>
-          <a class="btn-secondary" href="https://lihidomain.com/#register">免費註冊 lihi</a>
-        </div>
-        <div class="final-cta-offer" aria-label="優惠資訊">
-          <div class="final-cta-offer-copy">
-            <span class="final-cta-offer-label">LIMITED OFFER</span>
-            <span class="final-cta-offer-price">用折扣碼 LINKPR99<br>.link 網域只要 $99</span>
+        <div class="final-cta-actions-stack">
+          <div class="final-cta-actions-row">
+            <a class="btn-primary" href="https://lihidomain.com/#domain-search">立即搜尋網域</a>
+            <a class="btn-secondary" href="https://lihidomain.com/#register">免費註冊 lihi</a>
           </div>
-          <div class="final-cta-offer-code">
-            <strong>LINKPR99</strong>
-            <span>CHECKOUT CODE</span>
+          <div class="final-cta-offer" aria-label="優惠資訊">
+            <div class="final-cta-offer-copy">
+              <span class="final-cta-offer-label">LIMITED OFFER</span>
+              <span class="final-cta-offer-price">用折扣碼 LINKPR99<br>.link 網域只要 $99</span>
+            </div>
+            <div class="final-cta-offer-code">
+              <strong>LINKPR99</strong>
+              <span>CHECKOUT CODE</span>
+            </div>
           </div>
         </div>
       </div>
