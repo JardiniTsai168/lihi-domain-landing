@@ -118,12 +118,12 @@ body.menu-open{overflow:hidden}
 .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.06fr) minmax(320px,.94fr);gap:42px;align-items:center}
 .hero-copy{padding:42px 40px;border-radius:32px;background:linear-gradient(180deg,rgba(255,255,255,.97),rgba(255,255,255,.90));border:1px solid rgba(26,26,94,0.08);box-shadow:0 22px 60px rgba(26,26,94,0.10)}
 .hero-kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#fff0f5;color:var(--brand-pink);font-size:13px;font-weight:700;letter-spacing:.02em}
-.hero-title{margin-top:18px;font-size:clamp(40px,4.6vw,62px);line-height:1.04;font-weight:700;letter-spacing:-.04em;color:var(--text-dark);max-width:10.5ch}
+.hero-title{margin-top:18px;font-size:clamp(32px,3.6vw,48px);line-height:1.1;font-weight:700;letter-spacing:-.04em;color:var(--text-dark);max-width:13ch}
 .hero-lead{margin-top:20px;font-size:18px;line-height:1.8;color:var(--text-secondary);max-width:58ch}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 .hero-note{margin-top:16px;font-size:13px;color:#8D8DA8}
 
-.hero-visual{position:relative;padding:34px 22px 26px 76px;border-radius:34px;background:linear-gradient(145deg,#1a1a5e 0%,#2a257a 48%,#ff6b9d 150%);box-shadow:0 28px 60px rgba(26,26,94,.24);overflow:hidden}
+.hero-visual{position:relative;padding:30px 22px 22px 22px;border-radius:34px;background:linear-gradient(145deg,#1a1a5e 0%,#2a257a 48%,#ff6b9d 150%);box-shadow:0 28px 60px rgba(26,26,94,.24);overflow:hidden}
 .hero-visual::before{content:'';position:absolute;inset:0;background:
   radial-gradient(circle at 18% 16%,rgba(255,255,255,.22),transparent 24%),
   linear-gradient(135deg,rgba(255,255,255,.08),transparent 50%);
@@ -133,40 +133,8 @@ body.menu-open{overflow:hidden}
 .hero-visual-metric{position:absolute;right:20px;top:28px;z-index:2;width:136px;padding:16px 14px;border-radius:24px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);color:#fff}
 .hero-visual-metric strong{display:block;font:700 34px/1 'Inter',sans-serif}
 .hero-visual-metric span{display:block;font-size:12px;line-height:1.55;margin-top:6px;color:rgba(255,255,255,.86)}
-.hero-dashboard{position:relative;z-index:1;background:#fff;border-radius:22px;box-shadow:0 18px 48px rgba(10,14,60,.26),0 4px 12px rgba(0,0,0,.10);overflow:hidden;transform:rotateY(-8deg) rotateX(6deg)}
-.mockup-toolbar{background:#F1F3F5;padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #E5E7EB}
-.mockup-dots{display:flex;gap:6px}
-.mockup-dots span{width:10px;height:10px;border-radius:50%}
-.mockup-dots span:nth-child(1){background:#FF5F56}
-.mockup-dots span:nth-child(2){background:#FFBD2E}
-.mockup-dots span:nth-child(3){background:#27C93F}
-.mockup-url{flex:1;background:#fff;border-radius:6px;padding:6px 12px;font-size:13px;font-family:'JetBrains Mono',monospace;color:var(--text-secondary);margin-left:8px}
-.mockup-body{display:flex;min-height:212px}
-.mockup-sidebar{width:54px;background:#1A1A5E;padding:12px 0;display:flex;flex-direction:column;align-items:center;gap:14px}
-.mockup-sidebar-logo{width:28px;height:28px;background:var(--brand-pink);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
-.mockup-sidebar-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(255,255,255,.55)}
-.mockup-sidebar-icon.active{background:rgba(255,107,157,.30);color:#fff}
-.mockup-main{flex:1;padding:12px;background:#FAFBFC}
-.mockup-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.mockup-head strong{font-size:13px;color:var(--dark-bg)}
-.mockup-head span{font-size:10px;color:var(--text-secondary);background:#fff;padding:3px 8px;border-radius:4px;border:1px solid #E5E7EB}
-.mockup-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px}
-.mockup-stat{background:#fff;border-radius:8px;padding:10px 8px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-.mockup-stat .num{font-size:16px;font-weight:700;font-family:'Inter',sans-serif}
-.mockup-stat .num.green{color:var(--success)}
-.mockup-stat .num.orange{color:#F5A623}
-.mockup-stat .num.blue{color:var(--brand-pink)}
-.mockup-stat .label{font-size:9px;color:var(--text-secondary);margin-top:2px}
-.mockup-chart{background:#fff;border-radius:8px;padding:8px;margin-bottom:8px}
-.mockup-chart-top{font-size:10px;color:var(--text-secondary);display:flex;justify-content:space-between;margin-bottom:6px}
-.mockup-chart-top span:last-child{color:var(--success);font-weight:700}
-.mockup-bars{display:flex;align-items:flex-end;gap:3px;height:24px}
-.mockup-bars span{flex:1;min-width:4px;border-radius:2px 2px 0 0;background:linear-gradient(180deg,#ff9cbc,#ff6b9d)}
-.mockup-links{background:#fff;border-radius:8px;padding:8px}
-.mockup-link-row{display:flex;align-items:center;gap:8px;padding:5px 4px;border-bottom:1px solid #F1F3F5;font-size:9px}
-.mockup-link-row:last-child{border-bottom:none}
-.mockup-link-url{flex:1;color:var(--dark-bg);font-family:'JetBrains Mono',monospace;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.mockup-link-tag{display:inline-flex;align-items:center;justify-content:center;padding:1px 5px;border-radius:3px;font-size:8px;font-weight:700;background:#DCFCE7;color:#16A34A}
+.hero-figure{position:relative;z-index:1;padding:18px;border-radius:28px;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.16);box-shadow:0 18px 48px rgba(10,14,60,.18)}
+.hero-figure img{width:100%;border-radius:22px;display:block;box-shadow:0 18px 40px rgba(10,14,60,.22)}
 .hero-card{position:absolute;left:0;bottom:16px;z-index:3;width:224px;padding:18px;border-radius:24px;background:#fff;box-shadow:0 22px 44px rgba(26,26,94,.20);border:1px solid rgba(26,26,94,.08)}
 .hero-card .mini-label{display:inline-flex;align-items:center;padding:5px 9px;border-radius:999px;background:#fff0f5;color:var(--brand-pink);font-size:11px;font-weight:700}
 .hero-card .mini-domain{display:block;margin-top:14px;font:700 24px/1.05 'Inter','Noto Sans TC',sans-serif;color:var(--text-dark);letter-spacing:-.04em}
@@ -255,13 +223,13 @@ body.menu-open{overflow:hidden}
   .hero{padding-top:108px}
   .hero::before{inset:78px 12px 14px;border-radius:28px}
   .hero-copy{padding:28px 24px;border-radius:24px}
-  .hero-title{font-size:36px;max-width:none}
+  .hero-title{font-size:30px;max-width:12ch}
   .hero-lead{font-size:16px}
   .hero-visual{padding:28px 16px 22px 16px;margin-left:0}
   .hero-visual-pill-group,.hero-visual-metric{position:static}
   .hero-visual-pill-group{margin-bottom:14px}
   .hero-visual-metric{width:auto;margin:0 0 16px}
-  .hero-dashboard{transform:none}
+  .hero-figure{padding:12px}
   .hero-card{position:static;width:auto;margin-top:16px}
   .summary-card,.article-intro,.reason-card,.feature-card,.persona-card,.step{padding:20px}
   .article-shell{padding:36px 0 56px}
@@ -400,7 +368,7 @@ body.menu-open{overflow:hidden}
     <div class="hero-grid">
       <div class="hero-copy fade-in">
         <div class="hero-kicker">官方指南｜創業品牌入口</div>
-        <h1 class="hero-title">一個網域一個專案，讓你更看得懂流量</h1>
+        <h1 class="hero-title">一個網域一個專案，<br>讓你更看得懂流量</h1>
         <p class="hero-lead">AI 讓創業速度變快，但專案一多，入口也更容易變亂。與其把不同產品、活動、渠道都塞進同一個網址，不如先把品牌入口整理清楚，讓每一次市場測試更有依據。</p>
         <div class="hero-actions">
           <a class="btn-primary" href="https://lihidomain.com/#domain-search">立即搜尋你的 .link 網域</a>
@@ -418,68 +386,8 @@ body.menu-open{overflow:hidden}
           <strong>+32%</strong>
           <span>成效更容易看懂</span>
         </div>
-        <div class="hero-dashboard" aria-hidden="true">
-          <div class="mockup-toolbar">
-            <div class="mockup-dots"><span></span><span></span><span></span></div>
-            <div class="mockup-url">https://brand.link/campaign-a</div>
-          </div>
-          <div class="mockup-body">
-            <div class="mockup-sidebar">
-              <div class="mockup-sidebar-logo">L</div>
-              <div class="mockup-sidebar-icon active">●</div>
-              <div class="mockup-sidebar-icon">○</div>
-              <div class="mockup-sidebar-icon">△</div>
-              <div class="mockup-sidebar-icon">□</div>
-            </div>
-            <div class="mockup-main">
-              <div class="mockup-head">
-                <strong>專案流量概覽</strong>
-                <span>最近 7 天</span>
-              </div>
-              <div class="mockup-stats">
-                <div class="mockup-stat">
-                  <div class="num green">12.8K</div>
-                  <div class="label">總點擊</div>
-                </div>
-                <div class="mockup-stat">
-                  <div class="num orange">+32%</div>
-                  <div class="label">成長率</div>
-                </div>
-                <div class="mockup-stat">
-                  <div class="num blue">156</div>
-                  <div class="label">活躍連結</div>
-                </div>
-              </div>
-              <div class="mockup-chart">
-                <div class="mockup-chart-top">
-                  <span>每日點擊趨勢</span>
-                  <span>穩定上升</span>
-                </div>
-                <div class="mockup-bars">
-                  <span style="height:40%"></span>
-                  <span style="height:58%"></span>
-                  <span style="height:52%"></span>
-                  <span style="height:74%"></span>
-                  <span style="height:68%"></span>
-                  <span style="height:94%"></span>
-                </div>
-              </div>
-              <div class="mockup-links">
-                <div class="mockup-link-row">
-                  <span class="mockup-link-url">brand.link/ai-tool</span>
-                  <span class="mockup-link-tag">ON</span>
-                </div>
-                <div class="mockup-link-row">
-                  <span class="mockup-link-url">brand.link/course</span>
-                  <span class="mockup-link-tag">ON</span>
-                </div>
-                <div class="mockup-link-row">
-                  <span class="mockup-link-url">brand.link/event</span>
-                  <span class="mockup-link-tag">ON</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="hero-figure" aria-hidden="true">
+          <img src="../assets/images/link-domain-ecosystem.png" alt="品牌網域、信任、分析與短網址之間的關係示意圖">
         </div>
         <div class="hero-card" aria-hidden="true">
           <span class="mini-label">推薦做法</span>
