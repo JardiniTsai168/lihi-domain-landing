@@ -118,8 +118,7 @@ body.menu-open{overflow:hidden}
 .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.06fr) minmax(320px,.94fr);gap:42px;align-items:center}
 .hero-copy{padding:42px 40px;border-radius:32px;background:linear-gradient(180deg,rgba(255,255,255,.97),rgba(255,255,255,.90));border:1px solid rgba(26,26,94,0.08);box-shadow:0 22px 60px rgba(26,26,94,0.10)}
 .hero-kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#fff0f5;color:var(--brand-pink);font-size:13px;font-weight:700;letter-spacing:.02em}
-.hero-title{margin-top:18px;font-size:clamp(24px,2.9vw,39px);line-height:1.12;font-weight:700;letter-spacing:-.04em;color:var(--text-dark);max-width:none}
-.hero-title-line{display:block;white-space:nowrap}
+.hero-title{margin-top:18px;font-size:clamp(32px,3.6vw,48px);line-height:1.1;font-weight:700;letter-spacing:-.04em;color:var(--text-dark);max-width:13ch}
 .hero-lead{margin-top:20px;font-size:18px;line-height:1.8;color:var(--text-secondary);max-width:58ch}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 .hero-note{margin-top:16px;font-size:13px;color:#8D8DA8}
@@ -130,10 +129,10 @@ body.menu-open{overflow:hidden}
   linear-gradient(135deg,rgba(255,255,255,.08),transparent 50%);
   pointer-events:none}
 .hero-visual-pill-group{position:absolute;top:24px;left:24px;display:grid;gap:10px;z-index:2}
-.hero-visual-pill{display:inline-flex;align-items:center;min-height:38px;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(26,26,94,.10);color:#1A1A5E;font-size:13px;font-weight:700;box-shadow:0 10px 24px rgba(10,14,60,.12)}
-.hero-visual-metric{position:absolute;right:20px;top:28px;z-index:2;width:136px;padding:16px 14px;border-radius:24px;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(26,26,94,.10);color:#1A1A5E;box-shadow:0 10px 24px rgba(10,14,60,.14)}
-.hero-visual-metric strong{display:block;font:700 34px/1 'Inter',sans-serif;color:#1A1A5E}
-.hero-visual-metric span{display:block;font-size:12px;line-height:1.55;margin-top:6px;color:#1A1A5E}
+.hero-visual-pill{display:inline-flex;align-items:center;min-height:38px;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:13px;font-weight:700}
+.hero-visual-metric{position:absolute;right:20px;top:28px;z-index:2;width:136px;padding:16px 14px;border-radius:24px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);color:#fff}
+.hero-visual-metric strong{display:block;font:700 34px/1 'Inter',sans-serif}
+.hero-visual-metric span{display:block;font-size:12px;line-height:1.55;margin-top:6px;color:rgba(255,255,255,.86)}
 .hero-figure{position:relative;z-index:1;padding:18px;border-radius:28px;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.16);box-shadow:0 18px 48px rgba(10,14,60,.18)}
 .hero-figure img{width:100%;border-radius:22px;display:block;box-shadow:0 18px 40px rgba(10,14,60,.22)}
 .hero-card{position:absolute;left:0;bottom:16px;z-index:3;width:224px;padding:18px;border-radius:24px;background:#fff;box-shadow:0 22px 44px rgba(26,26,94,.20);border:1px solid rgba(26,26,94,.08)}
@@ -192,15 +191,9 @@ body.menu-open{overflow:hidden}
 .final-cta-card{padding:40px;border-radius:32px;background:linear-gradient(135deg,#1A1A5E 0%,#2A257A 42%,#FF6B9D 150%);color:#fff;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;box-shadow:0 26px 56px rgba(26,26,94,.22)}
 .final-cta-card h2{font-size:clamp(30px,3vw,42px);line-height:1.15;margin-bottom:14px}
 .final-cta-card p{font-size:17px;line-height:1.9;color:rgba(255,255,255,.82);max-width:54ch}
-.final-cta-side{display:grid;gap:14px;justify-items:start}
 .final-cta-actions{display:flex;flex-wrap:wrap;gap:12px}
 .final-cta-actions .btn-secondary{border-color:rgba(255,255,255,.42);color:#fff}
 .final-cta-actions .btn-secondary:hover{background:#fff;color:var(--text-dark)}
-.final-cta-offer{display:grid;gap:4px;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);box-shadow:0 16px 30px rgba(26,26,94,.12)}
-.final-cta-offer-label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.72)}
-.final-cta-offer-price{font-size:24px;font-weight:800;line-height:1.15;color:#fff}
-.final-cta-offer-code{font-size:14px;line-height:1.6;color:rgba(255,255,255,.88)}
-.final-cta-offer-code strong{color:#fff}
 
 .footer{background:#F9F5F7;border-top:1px solid rgba(26,26,94,0.08);padding:48px 0 32px;color:var(--text-secondary)}
 .footer-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
@@ -229,9 +222,8 @@ body.menu-open{overflow:hidden}
   .nav-hamburger{display:flex}
   .hero{padding-top:108px}
   .hero::before{inset:78px 12px 14px;border-radius:28px}
-  .hero-visual{display:none}
   .hero-copy{padding:28px 24px;border-radius:24px}
-  .hero-title{font-size:24px;line-height:1.14}
+  .hero-title{font-size:30px;max-width:12ch}
   .hero-lead{font-size:16px}
   .hero-visual{padding:28px 16px 22px 16px;margin-left:0}
   .hero-visual-pill-group,.hero-visual-metric{position:static}
@@ -395,10 +387,7 @@ body.menu-open{overflow:hidden}
           <span>成效更容易看懂</span>
         </div>
         <div class="hero-figure" aria-hidden="true">
-          <picture>
-            <source srcset="../assets/images/link-domain-ecosystem.webp" type="image/webp">
-            <img src="../assets/images/link-domain-ecosystem.png" width="1280" height="956" alt="品牌網域、信任、分析與短網址之間的關係示意圖">
-          </picture>
+          <img src="../assets/images/link-domain-ecosystem.png" alt="品牌網域、信任、分析與短網址之間的關係示意圖">
         </div>
         <div class="hero-card" aria-hidden="true">
           <span class="mini-label">推薦做法</span>
@@ -595,16 +584,9 @@ body.menu-open{overflow:hidden}
         <h2>先把品牌入口整理清楚，後面的成長才看得懂</h2>
         <p>如果你正在測試新專案、整理多個流量渠道，或想幫品牌建立更清楚的導流入口，可以先從適合的 .link 網域與可追蹤的連結管理開始。</p>
       </div>
-      <div class="final-cta-side">
-        <div class="final-cta-actions">
-          <a class="btn-primary" href="https://lihidomain.com/#domain-search">立即搜尋網域</a>
-          <a class="btn-secondary" href="https://lihidomain.com/#register">免費註冊 lihi</a>
-        </div>
-        <div class="final-cta-offer">
-          <span class="final-cta-offer-label">限時優惠</span>
-          <strong class="final-cta-offer-price">.link 網域只要 $99</strong>
-          <span class="final-cta-offer-code">折扣碼 <strong>LINKPR99</strong></span>
-        </div>
+      <div class="final-cta-actions">
+        <a class="btn-primary" href="https://lihidomain.com/#domain-search">立即搜尋網域</a>
+        <a class="btn-secondary" href="https://lihidomain.com/#register">免費註冊 lihi</a>
       </div>
     </div>
   </div>
