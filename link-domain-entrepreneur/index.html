@@ -191,8 +191,9 @@ body.menu-open{overflow:hidden}
 .final-cta-card{padding:40px;border-radius:32px;background:linear-gradient(135deg,#1A1A5E 0%,#2A257A 42%,#FF6B9D 150%);color:#fff;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;box-shadow:0 26px 56px rgba(26,26,94,.22)}
 .final-cta-card h2{font-size:clamp(30px,3vw,42px);line-height:1.15;margin-bottom:14px}
 .final-cta-card p{font-size:17px;line-height:1.9;color:rgba(255,255,255,.82);max-width:54ch}
-.final-cta-actions{display:flex;flex-wrap:wrap;gap:12px}
-.final-cta-offer{margin-top:18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.final-cta-actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.final-cta-actions-row{display:flex;flex-wrap:wrap;gap:12px}
+.final-cta-offer{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
 .final-cta-offer-label{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);font-size:13px;font-weight:700;color:#fff}
 .final-cta-offer-code{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;background:#fff;color:var(--brand-pink);font:800 15px/1 'Inter','Noto Sans TC',sans-serif;letter-spacing:.04em;box-shadow:0 10px 24px rgba(26,26,94,.18)}
 .final-cta-offer-price{font-size:16px;font-weight:700;color:#fff}
@@ -589,15 +590,17 @@ body.menu-open{overflow:hidden}
       <div>
         <h2>先把品牌入口整理清楚，後面的成長才看得懂</h2>
         <p>如果你正在測試新專案、整理多個流量渠道，或想幫品牌建立更清楚的導流入口，可以先從適合的 .link 網域與可追蹤的連結管理開始。</p>
+      </div>
+      <div class="final-cta-actions">
+        <div class="final-cta-actions-row">
+          <a class="btn-primary" href="https://lihidomain.com/#domain-search">立即搜尋網域</a>
+          <a class="btn-secondary" href="https://lihidomain.com/#register">免費註冊 lihi</a>
+        </div>
         <div class="final-cta-offer" aria-label="優惠資訊">
           <span class="final-cta-offer-label">用折扣碼</span>
           <span class="final-cta-offer-code">LINKPR99</span>
           <span class="final-cta-offer-price">.link 網域只要 $99</span>
         </div>
-      </div>
-      <div class="final-cta-actions">
-        <a class="btn-primary" href="https://lihidomain.com/#domain-search">立即搜尋網域</a>
-        <a class="btn-secondary" href="https://lihidomain.com/#register">免費註冊 lihi</a>
       </div>
     </div>
   </div>
