@@ -201,6 +201,7 @@ body.menu-open{overflow:hidden}
 .final-cta-offer-copy{display:flex;flex-direction:column;gap:8px}
 .final-cta-offer-label{display:inline-flex;align-items:center;width:max-content;padding:5px 9px;border-radius:999px;background:rgba(255,107,157,.12);font-size:10px;font-weight:800;color:var(--brand-pink);letter-spacing:.08em}
 .final-cta-offer-price{font-size:12px;font-weight:800;color:var(--text-dark);line-height:1.35}
+.final-cta-offer-price-line{display:inline}
 .final-cta-offer-code{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px 18px 14px 24px;border-left:2px dashed rgba(26,26,94,.18);color:var(--text-dark);font-weight:800;letter-spacing:.04em}
 .final-cta-offer-code strong{font:900 16px/1 'Inter','Noto Sans TC',sans-serif;color:var(--brand-pink)}
 .final-cta-offer-code span{font-size:9px;color:#6f6f8f;letter-spacing:.12em}
@@ -260,6 +261,7 @@ body.menu-open{overflow:hidden}
   .final-cta-offer-copy{gap:12px}
   .final-cta-offer-label{font-size:10px;padding:5px 9px}
   .final-cta-offer-price{display:block;font-size:18px;line-height:1.35;white-space:normal;letter-spacing:-.02em}
+  .final-cta-offer-price-line{display:block}
   .final-cta-offer-code{order:2;width:100%;align-self:stretch;padding:14px 16px;border-left:0;border-top:2px dashed rgba(26,26,94,.14);border-radius:0 0 18px 18px;background:linear-gradient(135deg,#fff 0%,#fff7fa 100%);box-shadow:none;flex-direction:row;justify-content:space-between;align-items:center;gap:12px}
   .final-cta-offer-code strong{font-size:28px;line-height:1;letter-spacing:.02em}
   .final-cta-offer-code span{text-align:right;font-size:10px;line-height:1.2}
@@ -616,7 +618,10 @@ body.menu-open{overflow:hidden}
           <div class="final-cta-offer" aria-label="優惠資訊">
             <div class="final-cta-offer-copy">
               <span class="final-cta-offer-label">LIMITED OFFER</span>
-              <span class="final-cta-offer-price">用折扣碼 LINKPR99 .link 網域只要 $99</span>
+              <span class="final-cta-offer-price">
+                <span class="final-cta-offer-price-line">用折扣碼 LINKPR99</span>
+                <span class="final-cta-offer-price-line">.link 網域只要 $99</span>
+              </span>
             </div>
             <div class="final-cta-offer-code">
               <strong>LINKPR99</strong>
