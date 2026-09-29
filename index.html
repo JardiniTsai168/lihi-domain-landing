@@ -353,22 +353,33 @@ body.menu-open{overflow:hidden}
 .data-cta-wrap{text-align:center;margin-top:50px}
 
 /* Promo Section */
-.promo-section{text-align:center;margin:0 auto;padding:0}
-.promo-note{margin:0 auto 18px;max-width:980px;padding:0 22px;color:#1A1A5E;font-size:26px;font-weight:800;line-height:1.35;text-align:center}
-.promo-body{background:linear-gradient(180deg,#fffdfd,#fff5f8);color:#2A2A68;padding:32px 72px 36px;border:1px solid #ead8e3;border-radius:30px;box-shadow:0 20px 36px rgba(26,26,94,.08);position:relative;overflow:hidden}
-.promo-body::before{content:'';position:absolute;top:-40px;right:-40px;width:140px;height:140px;background:radial-gradient(circle,rgba(255,107,157,.10) 0%,transparent 70%);pointer-events:none;border-radius:50%}
-.promo-pill{display:inline-block;background:#1A1A5E;color:#fff;padding:11px 42px;border-radius:12px;font-size:30px;font-weight:500;margin-bottom:4px;position:relative;z-index:1}
-.promo-code{font-size:28px;margin-bottom:22px;color:#2A2A68;position:relative;z-index:1}
-.promo-code strong{font:900 36px/1 'Inter',sans-serif;color:#FF6B9D;text-shadow:none}
-.gift-list{max-width:640px;margin:32px auto 28px;display:grid;gap:15px;text-align:left;position:relative;z-index:1}
-.gift-item{position:relative;background:#fff;border:1px solid #f0d6e2;border-radius:16px;color:#1A1A5E;padding:12px 28px 14px 92px;font-size:24px;font-weight:900;box-shadow:0 10px 22px rgba(26,26,94,.06);white-space:nowrap}
-.gift-item .num{position:absolute;left:-26px;top:50%;transform:translateY(-50%);width:72px;height:72px;border-radius:50%;background:#FF6B9D;color:#fff;display:flex;align-items:center;justify-content:center;font:900 56px/1 'Inter',sans-serif;box-shadow:0 10px 18px rgba(255,107,157,.24)}
-.gift-item small{font-size:24px;font-weight:900;margin-left:4px}
-.promo-foot{font-size:28px;line-height:1.6;color:#2A2A68;margin-bottom:24px;position:relative;z-index:1;text-align:center}
-.promo-foot strong{font-size:36px;color:#FF6B9D;text-shadow:none}
-.promo-copy-btn{display:inline-flex;align-items:center;gap:6px;background:var(--brand-pink);color:#fff;border:none;padding:14px 32px;border-radius:999px;font-size:18px;font-weight:700;cursor:pointer;transition:all .2s ease;position:relative;z-index:1}
-.promo-copy-btn:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,107,157,.22)}
-.promo-copy-btn.copied{background:var(--success)}
+.promo-section{max-width:980px;margin:0 auto;padding:0;text-align:left}
+.promo-note{display:table;margin:0 auto 18px;padding:7px 18px;background:#ffe8f0;border-radius:999px;color:#1A1A5E;font-size:14px;font-weight:800;line-height:1.4;letter-spacing:.12em}
+.promo-body{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);background:#1A1A5E;border:1px solid rgba(26,26,94,.08);border-radius:30px;box-shadow:0 24px 52px rgba(26,26,94,.16);position:relative;overflow:hidden}
+.promo-intro{display:flex;flex-direction:column;justify-content:center;padding:48px 42px;color:#fff;position:relative;isolation:isolate}
+.promo-intro::before{content:'';position:absolute;inset:auto auto -100px -80px;width:270px;height:270px;border-radius:50%;background:rgba(255,107,157,.18);z-index:-1}
+.promo-intro::after{content:'';position:absolute;top:34px;right:30px;width:72px;height:72px;background-image:radial-gradient(circle,rgba(255,255,255,.3) 1.5px,transparent 1.5px);background-size:10px 10px;z-index:-1}
+.promo-kicker{display:flex;align-items:center;gap:10px;margin-bottom:18px;color:#ffb7cf;font:700 12px/1.4 'Inter',sans-serif;letter-spacing:.14em}
+.promo-kicker::before{content:'';width:28px;height:2px;background:#FF6B9D;border-radius:999px}
+.promo-title{max-width:440px;margin:0 0 24px;font-size:clamp(27px,2.55vw,36px);font-weight:800;line-height:1.32;letter-spacing:-.025em;text-wrap:balance}
+.promo-title span{display:block;color:#ff8eb4}
+.promo-title .promo-title-main{color:#fff}
+.promo-summary{max-width:430px;color:#ececfa;font-size:16px;line-height:1.85}
+.promo-kit{margin:14px 14px 14px 0;padding:34px 34px 32px;background:#fff9fb;border-radius:22px}
+.promo-kit-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px;padding:0 2px 18px;border-bottom:1px solid #f0dce4}
+.promo-kit-heading strong{color:#1A1A5E;font-size:18px;font-weight:800}
+.promo-kit-heading span{flex-shrink:0;padding:5px 10px;background:#FF6B9D;border-radius:999px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em}
+.promo-kit-list{list-style:none;counter-reset:promo-item}
+.promo-kit-item{counter-increment:promo-item;display:grid;grid-template-columns:42px 1fr;align-items:center;gap:14px;min-height:56px;padding:11px 2px;border-bottom:1px solid #f3e5eb;color:#1A1A5E;font-size:16px;font-weight:700;line-height:1.55}
+.promo-kit-item:last-child{border-bottom:0}
+.promo-kit-item::before{content:counter(promo-item,decimal-leading-zero);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid #f4bfd1;border-radius:50%;color:#e8558a;font:800 11px/1 'Inter',sans-serif;background:#fff}
+
+@media(min-width:768px) and (max-width:900px){
+  .promo-body{display:block}
+  .promo-intro{padding:42px}
+  .promo-title{max-width:none}
+  .promo-kit{margin:0 14px 14px}
+}
 
 /* ===== SECTION: TESTIMONIALS ===== */
 .testimonials{background:#fff;padding:16px 0 var(--section-py);position:relative;overflow:hidden}
@@ -675,18 +686,20 @@ body.menu-open{overflow:hidden}
   }
 
   /* === 8.5 Promo section 手機版 === */
-  .promo-note{font-size:16px;line-height:1.25;margin-bottom:10px;padding:0 8px}
-  .promo-body{padding:24px 20px 28px;border-radius:18px}
-  .promo-pill{font-size:18px;padding:8px 16px;white-space:nowrap;margin-bottom:2px}
-  .promo-code{margin-top:2px;margin-bottom:10px;font-size:16px}
-  .promo-code strong{font-size:20px;line-height:inherit}
-  .gift-list{margin:0 auto 28px;gap:12px;padding-left:18px}
-  .gift-item{font-size:17px;padding:10px 14px 12px 52px;border-radius:12px;white-space:nowrap}
-  .gift-item .num{left:-14px;width:48px;height:48px;font-size:32px}
-  .gift-item small{display:inline;margin-left:4px;font-size:17px;font-weight:900}
-  .promo-foot{font-size:16px;line-height:1.5;margin-bottom:16px;text-align:center}
-  .promo-foot strong{font-size:20px}
-  .promo-copy-btn{padding:10px 24px;font-size:15px}
+  .promo-note{margin-bottom:12px;padding:6px 14px;font-size:12px}
+  .promo-body{display:block;border-radius:20px}
+  .promo-intro{padding:32px 24px 28px}
+  .promo-intro::before{width:210px;height:210px;bottom:-120px;left:-90px}
+  .promo-intro::after{top:24px;right:18px;width:52px;height:52px;background-size:8px 8px}
+  .promo-kicker{margin-bottom:14px;font-size:10px}
+  .promo-title{max-width:330px;margin-bottom:16px;font-size:clamp(22px,6.7vw,26px);line-height:1.35}
+  .promo-summary{font-size:15px;line-height:1.75}
+  .promo-kit{margin:0 10px 10px;padding:24px 18px 20px;border-radius:16px}
+  .promo-kit-heading{margin-bottom:4px;padding:0 0 14px}
+  .promo-kit-heading strong{font-size:16px}
+  .promo-kit-heading span{padding:5px 8px;font-size:10px}
+  .promo-kit-item{grid-template-columns:38px 1fr;gap:10px;min-height:58px;padding:10px 0;font-size:15px;line-height:1.55}
+  .promo-kit-item::before{width:34px;height:34px;font-size:10px}
 
   /* === 9. Footer 連結點擊區 === */
   .footer-links a{display:inline-block;padding:6px 0}
@@ -1240,21 +1253,27 @@ body.menu-open{overflow:hidden}
         <img src="./assets/images/fb-ad-compare.png?new" alt="Facebook 廣告數據對比 — 品牌網址 vs 一般短網址">
       </div>
     </div>
-    <div class="promo-section fade-in" style="transition-delay:.2s">
+    <div class="promo-section fade-in" id="promo-offer" style="transition-delay:.2s">
       <div class="promo-note">限時優惠</div>
       <div class="promo-body">
-        <div class="promo-pill">在 lihi 購買任何 .link 或是 .tw 網域</div>
-        <div class="promo-code">結帳時輸入 <strong>Domain99</strong> 即可獲得</div>
-        <div class="gift-list">
-          <div class="gift-item"><span class="num">1</span>200點簡訊發送點數</div>
-          <div class="gift-item"><span class="num">2</span>一個你專屬的網域</div>
-          <div class="gift-item"><span class="num">3</span>2 個月 <small>lihi Business 方案</small></div>
+        <div class="promo-intro">
+          <div class="promo-kicker">DOMAIN LAUNCH KIT</div>
+          <h2 class="promo-title"><span class="promo-title-main">買網域，免費送你一套</span><span>品牌行銷啟動包</span></h2>
+          <p class="promo-summary">你買的不只是一個網域。從品牌上線、內容製作、導流追蹤到簡訊再行銷，lihi 都幫你準備好。</p>
         </div>
-        <p class="promo-foot">市價超過 $2500 的服務<br>讓你花 <strong>$99</strong> 就能體驗</p>
-        <button type="button" class="promo-copy-btn" onclick="copyPromoCode()" aria-label="複製折扣碼">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-          複製折扣碼
-        </button>
+        <div class="promo-kit">
+          <div class="promo-kit-heading">
+            <strong>啟動包完整內容</strong>
+            <span>免費贈送</span>
+          </div>
+          <ol class="promo-kit-list">
+            <li class="promo-kit-item">從零開始的基礎行銷攻略</li>
+            <li class="promo-kit-item">2 個月品牌短網址、A/B 測試與成效追蹤</li>
+            <li class="promo-kit-item">品牌 QR Code 與多連結自介頁</li>
+            <li class="promo-kit-item">文案＋素材產生工具</li>
+            <li class="promo-kit-item">200 點行銷簡訊點數</li>
+          </ol>
+        </div>
       </div>
     </div>
     <div class="data-cta-wrap">
@@ -1741,44 +1760,6 @@ body.menu-open{overflow:hidden}
       }
     });
   });
-  // ===== COPY PROMO CODE =====
-  window.copyPromoCode = function() {
-    var code = 'Domain99';
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(code).then(function() {
-        showCopiedState();
-      }).catch(function() {
-        fallbackCopy(code);
-      });
-    } else {
-      fallbackCopy(code);
-    }
-    function fallbackCopy(text) {
-      var ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand('copy');
-        showCopiedState();
-      } catch (e) {}
-      document.body.removeChild(ta);
-    }
-    function showCopiedState() {
-      var btn = document.querySelector('.promo-copy-btn');
-      if (!btn) return;
-      var originalText = btn.textContent;
-      btn.textContent = '已複製!';
-      btn.classList.add('copied');
-      setTimeout(function() {
-        btn.textContent = originalText;
-        btn.classList.remove('copied');
-      }, 2000);
-    }
-  };
-
 })();
 </script>
 </body>
