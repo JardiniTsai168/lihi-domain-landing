@@ -365,11 +365,11 @@ body.menu-open{overflow:hidden}
 .promo-title span{display:block;color:#ff8eb4}
 .promo-title .promo-title-main{color:#fff}
 .promo-summary{max-width:430px;color:#ececfa;font-size:16px;line-height:1.85}
-.promo-kit{margin:14px 14px 14px 0;padding:34px 34px 32px;background:#fff9fb;border-radius:22px}
+.promo-kit{display:flex;flex-direction:column;margin:14px 14px 14px 0;padding:34px 34px 32px;background:#fff9fb;border-radius:22px}
 .promo-kit-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px;padding:0 2px 18px;border-bottom:1px solid #f0dce4}
 .promo-kit-heading strong{color:#1A1A5E;font-size:18px;font-weight:800}
 .promo-kit-heading span{flex-shrink:0;padding:5px 10px;background:#FF6B9D;border-radius:999px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em}
-.promo-kit-list{list-style:none;counter-reset:promo-item}
+.promo-kit-list{display:grid;grid-template-rows:repeat(3,minmax(64px,1fr));flex:1;list-style:none;counter-reset:promo-item}
 .promo-kit-item{counter-increment:promo-item;display:grid;grid-template-columns:42px 1fr;align-items:center;gap:14px;min-height:56px;padding:11px 2px;border-bottom:1px solid #f3e5eb;color:#1A1A5E;font-size:16px;font-weight:700;line-height:1.55}
 .promo-kit-item:last-child{border-bottom:0}
 .promo-kit-item::before{content:counter(promo-item,decimal-leading-zero);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid #f4bfd1;border-radius:50%;color:#e8558a;font:800 11px/1 'Inter',sans-serif;background:#fff}
@@ -1259,7 +1259,7 @@ body.menu-open{overflow:hidden}
         <div class="promo-intro">
           <div class="promo-kicker">DOMAIN LAUNCH KIT</div>
           <h2 class="promo-title"><span class="promo-title-main">買網域，免費送你一套</span><span>品牌行銷啟動包</span></h2>
-          <p class="promo-summary">你買的不只是一個網域。從品牌上線、內容製作、導流追蹤到簡訊再行銷，lihi 都幫你準備好。</p>
+          <p class="promo-summary">你買的不只是一個網域。從建立品牌入口、導流追蹤到簡訊再行銷，lihi 都幫你準備好。</p>
         </div>
         <div class="promo-kit">
           <div class="promo-kit-heading">
@@ -1267,10 +1267,8 @@ body.menu-open{overflow:hidden}
             <span>免費贈送</span>
           </div>
           <ol class="promo-kit-list">
-            <li class="promo-kit-item">從零開始的基礎行銷攻略</li>
             <li class="promo-kit-item">2 個月品牌短網址、A/B 測試與成效追蹤</li>
             <li class="promo-kit-item">品牌 QR Code 與多連結自介頁</li>
-            <li class="promo-kit-item">文案＋素材產生工具</li>
             <li class="promo-kit-item">200 點行銷簡訊點數</li>
           </ol>
         </div>
